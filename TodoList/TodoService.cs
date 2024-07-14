@@ -47,11 +47,11 @@ namespace TodoList
         {
             
             var pathOfFile = Path.GetDirectoryName(FileToDo);
-            if (!File.Exists(pathOfFile))
+            if (!Directory.Exists(pathOfFile))
             {
                 Directory.CreateDirectory(pathOfFile);
             }
-            var todos = new List<Todo>();
+            var todos = new List<Todo>(_allTodos);
             //new JsonSerializerOptions { WriteIndented = true } là thụt lề
             var json = JsonSerializer.Serialize(todos, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(FileToDo, json);
