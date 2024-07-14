@@ -16,12 +16,13 @@ namespace TodoList
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Todos todos;
+        private TodoService todos;
         public MainWindow()
         {
             InitializeComponent();
-            todos = new Todos();
+            todos = new TodoService();
             DataContext = todos;
+            Closing += MainWindow_Closing;
         }
 
         private void AddTodoButton_clicked(object sender, RoutedEventArgs e)
@@ -36,6 +37,12 @@ namespace TodoList
                 Desc = NewTodoTextBox.Text,
             };
             todos.AllTodos.Add(todo);
+            NewTodoTextBox.Clear();
+        }
+        private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            
+           todos.SaveFileToDo();
         }
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
