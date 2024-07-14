@@ -39,3 +39,4 @@ C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\refint\TodoList.dl
 C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList.pdb
 C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList.genruntimeconfig.cache
 C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\ref\TodoList.dll
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList_Content.g.cs
