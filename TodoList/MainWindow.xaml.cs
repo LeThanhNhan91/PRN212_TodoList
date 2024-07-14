@@ -26,11 +26,26 @@ namespace TodoList
 
         private void AddTodoButton_clicked(object sender, RoutedEventArgs e)
         {
+            if (NewTodoTextBox.Text.Length == 0)
+            {
+                MessageBox.Show("Please text to the box", "Error input", MessageBoxButton.OK, MessageBoxImage.None);
+                return;
+            }
             Todo todo = new Todo()
             {
                 Desc = NewTodoTextBox.Text,
             };
             todos.AllTodos.Add(todo);
+        }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void NewTodoTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

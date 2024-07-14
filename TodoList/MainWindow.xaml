@@ -11,7 +11,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <ListView Grid.Row="0" ItemsSource="{Binding AllTodos}">
+        <ListView Grid.Row="0" ItemsSource="{Binding AllTodos}" SelectionChanged="ListView_SelectionChanged">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <CheckBox IsChecked="{Binding IsDone}" Content="{Binding Desc}"></CheckBox>
@@ -19,7 +19,7 @@
             </ListView.ItemTemplate>
         </ListView>
         <StackPanel Grid.Row="1" Orientation="Horizontal">
-            <TextBox x:Name="NewTodoTextBox" Width="150" Margin="10"></TextBox>
+            <TextBox x:Name="NewTodoTextBox" Width="150" Margin="10" TextChanged="NewTodoTextBox_TextChanged"></TextBox>
             <Button Content="Add Todo" Click="AddTodoButton_clicked" Margin="10"></Button>
         </StackPanel>
     </Grid>

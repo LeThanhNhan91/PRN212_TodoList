@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List\\TodoList\\",
+  "WorkspaceRootPath": "C:\\FPTUNI\\5\\PRN212_Todolist\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\TodoList.csproj|c:\\users\\lenovo p14s gen 2\\desktop\\24.su.prn212\\todo_list\\todolist\\todolist\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\TodoList.csproj|c:\\fptuni\\5\\prn212_todolist\\todolist\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\TodoList.csproj|solutionrelative:todolist\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\TodoList.csproj|c:\\users\\lenovo p14s gen 2\\desktop\\24.su.prn212\\todo_list\\todolist\\todolist\\todos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\TodoList.csproj|solutionrelative:todolist\\todos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\TodoList.csproj|c:\\users\\lenovo p14s gen 2\\desktop\\24.su.prn212\\todo_list\\todolist\\todolist\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\TodoList.csproj|c:\\fptuni\\5\\prn212_todolist\\todolist\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\TodoList.csproj|solutionrelative:todolist\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\TodoList.csproj|c:\\users\\lenovo p14s gen 2\\desktop\\24.su.prn212\\todo_list\\todolist\\todolist\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\TodoList.csproj|c:\\fptuni\\5\\prn212_todolist\\todolist\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\TodoList.csproj|solutionrelative:todolist\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\TodoList.csproj|c:\\fptuni\\5\\prn212_todolist\\todolist\\todos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\TodoList.csproj|solutionrelative:todolist\\todos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,6 +30,10 @@
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
@@ -37,29 +41,25 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Todos.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List\\TodoList\\TodoList\\Todos.cs",
+              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\Todos.cs",
               "RelativeDocumentMoniker": "TodoList\\Todos.cs",
-              "ToolTip": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List\\TodoList\\TodoList\\Todos.cs",
+              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\Todos.cs",
               "RelativeToolTip": "TodoList\\Todos.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAwBQAAAAOAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAwBQAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-14T02:35:08.931Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Todo.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List\\TodoList\\TodoList\\Todo.cs",
+              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\Todo.cs",
               "RelativeDocumentMoniker": "TodoList\\Todo.cs",
-              "ToolTip": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List\\TodoList\\TodoList\\Todo.cs",
+              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\Todo.cs",
               "RelativeToolTip": "TodoList\\Todo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -68,11 +68,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List\\TodoList\\TodoList\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\MainWindow.xaml",
               "RelativeDocumentMoniker": "TodoList\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List\\TodoList\\TodoList\\MainWindow.xaml",
+              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\MainWindow.xaml",
               "RelativeToolTip": "TodoList\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-07-14T02:29:11.616Z",
@@ -82,11 +82,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List\\TodoList\\TodoList\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "TodoList\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List\\TodoList\\TodoList\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\MainWindow.xaml.cs",
               "RelativeToolTip": "TodoList\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAMwB4AAAArAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAMwB8AAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-14T02:29:10.971Z",
               "EditorCaption": ""

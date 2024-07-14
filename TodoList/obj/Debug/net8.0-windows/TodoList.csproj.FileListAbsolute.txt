@@ -18,3 +18,24 @@ C:\Users\Lenovo P14s Gen 2\Desktop\24.SU.PRN212\Todo_List\TodoList\TodoList\obj\
 C:\Users\Lenovo P14s Gen 2\Desktop\24.SU.PRN212\Todo_List\TodoList\TodoList\obj\Debug\net8.0-windows\TodoList.pdb
 C:\Users\Lenovo P14s Gen 2\Desktop\24.SU.PRN212\Todo_List\TodoList\TodoList\obj\Debug\net8.0-windows\TodoList.genruntimeconfig.cache
 C:\Users\Lenovo P14s Gen 2\Desktop\24.SU.PRN212\Todo_List\TodoList\TodoList\obj\Debug\net8.0-windows\ref\TodoList.dll
+C:\FPTUNI\5\PRN212_Todolist\TodoList\bin\Debug\net8.0-windows\TodoList.exe
+C:\FPTUNI\5\PRN212_Todolist\TodoList\bin\Debug\net8.0-windows\TodoList.deps.json
+C:\FPTUNI\5\PRN212_Todolist\TodoList\bin\Debug\net8.0-windows\TodoList.runtimeconfig.json
+C:\FPTUNI\5\PRN212_Todolist\TodoList\bin\Debug\net8.0-windows\TodoList.dll
+C:\FPTUNI\5\PRN212_Todolist\TodoList\bin\Debug\net8.0-windows\TodoList.pdb
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\App.g.cs
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList_MarkupCompile.cache
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList_MarkupCompile.lref
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\MainWindow.baml
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList.g.resources
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList.GeneratedMSBuildEditorConfig.editorconfig
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList.AssemblyInfoInputs.cache
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList.AssemblyInfo.cs
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList.csproj.CoreCompileInputs.cache
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList.sourcelink.json
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList.dll
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\refint\TodoList.dll
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList.pdb
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList.genruntimeconfig.cache
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\ref\TodoList.dll
