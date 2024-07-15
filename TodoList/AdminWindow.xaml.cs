@@ -24,11 +24,6 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void EmailTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        
+       
     }
 }

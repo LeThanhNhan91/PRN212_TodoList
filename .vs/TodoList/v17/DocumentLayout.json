@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|c:\\users\\admin\\desktop\\project\\prn212_todolist\\repositories\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|c:\\users\\admin\\desktop\\project\\prn212_todolist\\repositories\\migrations\\tododbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\migrations\\tododbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\admin\\desktop\\project\\prn212_todolist\\todolist\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|c:\\users\\admin\\desktop\\project\\prn212_todolist\\repositories\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,23 +38,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Repositories\\appsettings.json",
+              "RelativeDocumentMoniker": "Repositories\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Repositories\\appsettings.json",
+              "RelativeToolTip": "Repositories\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-15T14:43:18.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TodoDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Repositories\\Migrations\\TodoDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Repositories\\Migrations\\TodoDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Repositories\\Migrations\\TodoDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Repositories\\Migrations\\TodoDbContextModelSnapshot.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T14:43:10.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\AdminWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TodoList\\AdminWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\AdminWindow.xaml.cs",
+              "RelativeToolTip": "TodoList\\AdminWindow.xaml.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAkwBoAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T14:03:02.116Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AdminWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\AdminWindow.xaml",
               "RelativeDocumentMoniker": "TodoList\\AdminWindow.xaml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\AdminWindow.xaml",
-              "RelativeToolTip": "TodoList\\AdminWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\AdminWindow.xaml*",
+              "RelativeToolTip": "TodoList\\AdminWindow.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-07-15T13:43:39.366Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Repositories\\User.cs",
               "RelativeDocumentMoniker": "Repositories\\User.cs",
@@ -55,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "TodoService.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Services\\TodoService.cs",
               "RelativeDocumentMoniker": "Services\\TodoService.cs",
@@ -68,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Repositories",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Repositories\\Repositories.csproj",
               "RelativeDocumentMoniker": "Repositories\\Repositories.csproj",
