@@ -3346,19 +3346,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\12-7\\PRN212_TodoList\\TodoList\\GUI.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "E:\\12-7\\PRN212_TodoList\\TodoList\\GUI.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "E:\\12-7\\PRN212_TodoList\\TodoList\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\GUI.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3373,8 +3373,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "E:\\12-7\\PRN212_TodoList\\Services\\Services.csproj": {
-              "projectPath": "E:\\12-7\\PRN212_TodoList\\Services\\Services.csproj"
+            "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Services\\Services.csproj"
             }
           }
         }
@@ -3418,7 +3418,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
