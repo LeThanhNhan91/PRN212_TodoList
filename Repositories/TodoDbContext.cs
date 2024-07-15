@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace Repositories
 {
-    public class TodoContext : DbContext
+    public class TodoDbContext : DbContext
     {
-        public TodoContext()
+        public TodoDbContext()
         {
         }
 
-        public TodoContext(DbContextOptions<TodoContext> options)
+        public TodoDbContext(DbContextOptions<TodoDbContext> options)
             : base(options)
         {
         }
@@ -35,12 +35,9 @@ namespace Repositories
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Todo> Todos { get; set; }
 
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder); 
-     
-            
         }
     }
 }
