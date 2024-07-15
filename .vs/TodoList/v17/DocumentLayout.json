@@ -1,12 +1,87 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\12-7\\PRN212_TodoList\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\admin\\desktop\\project\\prn212_todolist\\todolist\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|c:\\users\\admin\\desktop\\project\\prn212_todolist\\repositories\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|c:\\users\\admin\\desktop\\project\\prn212_todolist\\services\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|solutionrelative:services\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|c:\\users\\admin\\desktop\\project\\prn212_todolist\\repositories\\repositories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\repositories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\AdminWindow.xaml",
+              "RelativeDocumentMoniker": "TodoList\\AdminWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\AdminWindow.xaml",
+              "RelativeToolTip": "TodoList\\AdminWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-15T13:43:39.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Repositories\\User.cs",
+              "RelativeDocumentMoniker": "Repositories\\User.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Repositories\\User.cs",
+              "RelativeToolTip": "Repositories\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T13:38:26.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TodoService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Services\\TodoService.cs",
+              "RelativeDocumentMoniker": "Services\\TodoService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Services\\TodoService.cs",
+              "RelativeToolTip": "Services\\TodoService.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAA7wCsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T13:38:12.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Repositories",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Repositories\\Repositories.csproj",
+              "RelativeDocumentMoniker": "Repositories\\Repositories.csproj",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Repositories\\Repositories.csproj",
+              "RelativeToolTip": "Repositories\\Repositories.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-15T13:37:57.756Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
