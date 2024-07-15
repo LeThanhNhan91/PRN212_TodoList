@@ -40,3 +40,10 @@ C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList.pdb
 C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList.genruntimeconfig.cache
 C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\ref\TodoList.dll
 C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList_Content.g.cs
+C:\FPTUNI\5\PRN212_Todolist\TodoList\bin\Debug\net8.0-windows\Hardcodet.Wpf.TaskbarNotification.dll
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList.csproj.AssemblyReference.cache
+C:\FPTUNI\5\PRN212_Todolist\TodoList\obj\Debug\net8.0-windows\TodoList.csproj.Up2Date
+C:\FPTUNI\5\PRN212_Todolist\TodoList\bin\Debug\net8.0-windows\Repositories.dll
+C:\FPTUNI\5\PRN212_Todolist\TodoList\bin\Debug\net8.0-windows\Services.dll
+C:\FPTUNI\5\PRN212_Todolist\TodoList\bin\Debug\net8.0-windows\Services.pdb
+C:\FPTUNI\5\PRN212_Todolist\TodoList\bin\Debug\net8.0-windows\Repositories.pdb
