@@ -22,36 +22,62 @@ namespace GUI
     public partial class UserDetailWindow : Window
     {
         private UserService _service = new();
-        private User user = new User();
-        public UserDetailWindow()
+
+        public User SelectedUser { get; set; }
+
+        public UserDetailWindow(User user = null)
         {
             InitializeComponent();
+            SelectedUser = user;
         }
-
-        
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
+            User user = SelectedUser ?? new User();
+
             if (UserRoleCombobox.SelectedItem is ComboBoxItem selectedItem)
             {
                 string displayText = selectedItem.Content.ToString();
                 int valueToSave = int.Parse(selectedItem.Tag.ToString());
                 user.Role = valueToSave;
-                
-
-                // Bạn có thể lưu giá trị này vào cơ sở dữ liệu hoặc xử lý theo yêu cầu
             }
+
             user.FullName = FullNameTextBox.Text;
             user.Email = EmailTextBox.Text;
             user.Password = PasswordTextBox.Text;
-            
-            _service.AddUser(user);
+
+            if (SelectedUser == null)
+                _service.AddUser(user);
+            else
+                _service.UpdateUser(user);
+
             this.Close();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            
+            if (SelectedUser != null)
+            {
+                UsersModelLabel.Content = "Update User Account";
+                UserIdTextBox.Text = SelectedUser.UserId.ToString();
+                UserIdTextBox.IsEnabled = false;
+                FullNameTextBox.Text = SelectedUser.FullName;
+                EmailTextBox.Text = SelectedUser.Email;
+                PasswordTextBox.Text = SelectedUser.Password;
+                UserRoleCombobox.SelectedValue = SelectedUser.Role;
+            }
+            else
+            {
+                UsersModelLabel.Content = "Create User Account";
+                UserIdTextBox.Text = "Cannot input the userId";
+                UserIdTextBox.IsEnabled = false;
+            }
+        }
+
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
+

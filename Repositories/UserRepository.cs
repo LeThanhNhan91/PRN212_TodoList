@@ -23,6 +23,13 @@ namespace Repositories
             _context.SaveChanges();
         }
 
+        public void Update(User user)
+        {
+            _context = new();
+            _context.Users.Update(user);
+            _context.SaveChanges();
+        }
+
         public void Delete(User x)
         {
             _context = new();

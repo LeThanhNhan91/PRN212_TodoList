@@ -22,6 +22,11 @@ namespace Services
             _repo.Add(user);
         }
 
+        public void UpdateUser(User user)
+        {
+            _repo.Update(user);
+        }
+
         //hàm search
         public List<User> SearchUserByEmailAndFullName(string email, string fullName)
         {

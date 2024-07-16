@@ -3351,11 +3351,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List_Team\\PRN212_TodoList\\TodoList\\GUI.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\PRN212_TodoList\\TodoList\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List_Team\\PRN212_TodoList\\TodoList\\GUI.csproj",
+      "projectPath": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\PRN212_TodoList\\TodoList\\GUI.csproj",
       "packagesPath": "C:\\Users\\Lenovo P14s Gen 2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List_Team\\PRN212_TodoList\\TodoList\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\PRN212_TodoList\\TodoList\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo P14s Gen 2\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3372,8 +3372,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List_Team\\PRN212_TodoList\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List_Team\\PRN212_TodoList\\Services\\Services.csproj"
+            "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\PRN212_TodoList\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\PRN212_TodoList\\Services\\Services.csproj"
             }
           }
         }
