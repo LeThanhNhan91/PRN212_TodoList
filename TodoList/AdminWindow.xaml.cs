@@ -44,6 +44,9 @@ namespace GUI
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
             //trang detail
+            UserDetailWindow detail = new();
+            detail.ShowDialog();
+            LoadDataGrid();
         }
 
         private void UpdateButton_Click(object sender, RoutedEventArgs e)

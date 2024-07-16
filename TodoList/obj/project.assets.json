@@ -3346,19 +3346,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Lenovo P14s Gen 2\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\GUI.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List_Team\\PRN212_TodoList\\TodoList\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\GUI.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\obj\\",
+      "projectPath": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List_Team\\PRN212_TodoList\\TodoList\\GUI.csproj",
+      "packagesPath": "C:\\Users\\Lenovo P14s Gen 2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List_Team\\PRN212_TodoList\\TodoList\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lenovo P14s Gen 2\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3366,15 +3366,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Services\\Services.csproj"
+            "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List_Team\\PRN212_TodoList\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\Lenovo P14s Gen 2\\Desktop\\24.SU.PRN212\\Todo_List_Team\\PRN212_TodoList\\Services\\Services.csproj"
             }
           }
         }
@@ -3418,7 +3417,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

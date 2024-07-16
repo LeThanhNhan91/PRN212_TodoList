@@ -16,6 +16,11 @@ namespace Services
             return _repo.GetUser();
         }
 
+        public void AddUser(User user)
+        {
+            _repo.Add(user);
+        }
+
         public void DeleteUser(User x)
         {
             _repo.Delete(x);
