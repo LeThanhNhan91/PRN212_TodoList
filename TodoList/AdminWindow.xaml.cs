@@ -73,5 +73,16 @@ namespace GUI
         {
             Application.Current.Shutdown();
         }
+
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+            string email = EmailTextBox.Text.ToLower();
+            string fullName = FullNameTextBox.Text.ToLower();
+
+            List<User> result = _service.SearchUserByEmailAndFullName(email, fullName);
+            //f5
+            UserListDataGrid.ItemsSource = null;
+            UserListDataGrid.ItemsSource = result;
+        }
     }
 }

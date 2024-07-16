@@ -16,6 +16,16 @@ namespace Services
             return _repo.GetUser();
         }
 
+        //hàm search
+        public List<User> SearchUserByEmailAndFullName(string email, string fullName)
+        {
+            email = email.ToLower();
+            fullName = fullName.ToLower();
+
+            return _repo.GetUser().Where(x => x.Email.ToLower().Contains(email) && x.FullName.ToLower().Contains(fullName)).ToList();
+        }
+
+        //hàm xóa
         public void DeleteUser(User x)
         {
             _repo.Delete(x);
