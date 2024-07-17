@@ -1,53 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\CSharp_Projects\\PRN212\\Pull\\PRN212_TodoList\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|d:\\csharp_projects\\prn212\\pull\\prn212_todolist\\todolist\\taskdetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\taskdetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|d:\\csharp_projects\\prn212\\pull\\prn212_todolist\\todolist\\taskdetailwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\taskdetailwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\Pull\\PRN212_TodoList\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TaskDetailWindow.xaml.cs",
-              "DocumentMoniker": "D:\\CSharp_Projects\\PRN212\\Pull\\PRN212_TodoList\\TodoList\\TaskDetailWindow.xaml.cs",
-              "RelativeDocumentMoniker": "TodoList\\TaskDetailWindow.xaml.cs",
-              "ToolTip": "D:\\CSharp_Projects\\PRN212\\Pull\\PRN212_TodoList\\TodoList\\TaskDetailWindow.xaml.cs",
-              "RelativeToolTip": "TodoList\\TaskDetailWindow.xaml.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAawCAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T12:02:12.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TaskDetailWindow.xaml",
-              "DocumentMoniker": "D:\\CSharp_Projects\\PRN212\\Pull\\PRN212_TodoList\\TodoList\\TaskDetailWindow.xaml",
-              "RelativeDocumentMoniker": "TodoList\\TaskDetailWindow.xaml",
-              "ToolTip": "D:\\CSharp_Projects\\PRN212\\Pull\\PRN212_TodoList\\TodoList\\TaskDetailWindow.xaml",
-              "RelativeToolTip": "TodoList\\TaskDetailWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-17T11:59:39.851Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

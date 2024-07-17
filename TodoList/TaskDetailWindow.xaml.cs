@@ -1,4 +1,5 @@
 ﻿using Repositories;
+using Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,8 +23,7 @@ namespace GUI
     {
 		public User User { get; set; }
 		public Todo Task { get; set; }
-		public DateTime Time = DateTime.Now;
-
+		private TodoService _service = new TodoService();
 		public TaskDetailWindow()
 		{
 			InitializeComponent();
@@ -132,10 +132,12 @@ namespace GUI
 			if (Task != null)
 			{
 				// Gọi service update
+				_service.UpdateTask(task);
 			}
 			else
 			{
 				// Gọi service add
+				_service.AddTask(task);
 			}
 			this.Close();
 		}
