@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\FPTUNI\\5\\PRN212_Todolist\\",
+  "WorkspaceRootPath": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\fptuni\\5\\prn212_todolist\\todolist\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|d:\\csharp_projects\\prn212\\assignment\\prn212_todolist\\todolist\\createtaskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\createtaskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\fptuni\\5\\prn212_todolist\\todolist\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\fptuni\\5\\prn212_todolist\\todolist\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\fptuni\\5\\prn212_todolist\\todolist\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\todolist\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\fptuni\\5\\prn212_todolist\\todolist\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\todolist\\createtaskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\createtaskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\todolist\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\repositories\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\todolist\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,81 +34,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\App.xaml",
-              "RelativeDocumentMoniker": "TodoList\\App.xaml",
-              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\App.xaml",
-              "RelativeToolTip": "TodoList\\App.xaml",
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\TodoList\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "TodoList\\MainWindow.xaml",
+              "ToolTip": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\TodoList\\MainWindow.xaml",
+              "RelativeToolTip": "TodoList\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-16T09:28:45.95Z",
+              "WhenOpened": "2024-07-17T06:54:29.238Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "TodoList\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "TodoList\\MainWindow.xaml.cs*",
-              "ViewState": "AQIAACkAAAAAAAAAAAAowEQAAAB/AAAA",
+              "DocumentIndex": 5,
+              "Title": "TodoService.cs",
+              "DocumentMoniker": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\TodoList\\TodoService.cs",
+              "RelativeDocumentMoniker": "TodoList\\TodoService.cs",
+              "ToolTip": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\TodoList\\TodoService.cs",
+              "RelativeToolTip": "TodoList\\TodoService.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAcwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T09:25:27.362Z",
+              "WhenOpened": "2024-07-17T06:33:29.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateTaskWindow.xaml.cs",
+              "DocumentMoniker": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\TodoList\\CreateTaskWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TodoList\\CreateTaskWindow.xaml.cs",
+              "ToolTip": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\TodoList\\CreateTaskWindow.xaml.cs",
+              "RelativeToolTip": "TodoList\\CreateTaskWindow.xaml.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAA0wFkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T06:24:58.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateTaskWindow.xaml",
+              "DocumentMoniker": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\TodoList\\CreateTaskWindow.xaml",
+              "RelativeDocumentMoniker": "TodoList\\CreateTaskWindow.xaml",
+              "ToolTip": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\TodoList\\CreateTaskWindow.xaml",
+              "RelativeToolTip": "TodoList\\CreateTaskWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-17T04:18:19.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "TodoList\\MainWindow.xaml",
-              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\MainWindow.xaml",
-              "RelativeToolTip": "TodoList\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-16T09:25:13.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "TodoList\\AssemblyInfo.cs",
-              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\AssemblyInfo.cs",
-              "RelativeToolTip": "TodoList\\AssemblyInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\TodoList\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TodoList\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\TodoList\\MainWindow.xaml.cs",
+              "RelativeToolTip": "TodoList\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAYwFgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T09:24:46.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-17T05:31:46.363Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "favicon.ico - Icon [16x16, 32 bit, BMP]",
-              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\favicon.ico",
-              "RelativeDocumentMoniker": "TodoList\\favicon.ico",
-              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\favicon.ico - Icon [16x16, 32 bit, BMP]",
-              "RelativeToolTip": "TodoList\\favicon.ico - Icon [16x16, 32 bit, BMP]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
-              "WhenOpened": "2024-07-16T09:24:37.142Z",
-              "EditorCaption": " - Icon [16x16, 32 bit, BMP]"
+              "Title": "Todo.cs",
+              "DocumentMoniker": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\Repositories\\Todo.cs",
+              "RelativeDocumentMoniker": "Repositories\\Todo.cs",
+              "ToolTip": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\Repositories\\Todo.cs",
+              "RelativeToolTip": "Repositories\\Todo.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA5wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T04:20:58.768Z"
             }
           ]
         }
