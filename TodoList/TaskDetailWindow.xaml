@@ -9,32 +9,28 @@
         Background="#BBDEFB"
         >
     <Grid Loaded="Grid_Loaded">
-        <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Margin="701,389,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.726,0.754" Width="89" Height="35" FontSize="20" Background="#0D47A1" Foreground="White" Click="SaveButton_Click"/>
-        <Label x:Name="TaskDetailTitleLabel" Content="Create a task" HorizontalAlignment="Left" Margin="29,10,0,0" VerticalAlignment="Top" Width="279" FontSize="30" Foreground="#0D47A1"/>
-        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="607,389,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.726,0.754" Width="89" Height="35" FontSize="20" Background="#0D47A1" Foreground="White" Click="BackButton_Click"/>
+        <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Margin="701,389,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.726,0.754" Width="89" Height="35" FontSize="20" Background="#0D47A1" Foreground="White" Click="SaveButton_Click" FontWeight="Bold"/>
+        <Label x:Name="TaskDetailTitleLabel" Content="Create a task" HorizontalAlignment="Left" Margin="29,10,0,0" VerticalAlignment="Top" Width="279" FontSize="30" Foreground="#0D47A1" FontWeight="Bold"/>
+        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="607,389,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.726,0.754" Width="89" Height="35" FontSize="20" Background="#0D47A1" Foreground="White" Click="BackButton_Click" FontWeight="Bold"/>
         <Label x:Name="NoteIdLabel" Content="" HorizontalAlignment="Left" Margin="746,23,0,0" VerticalAlignment="Top" Width="10" Background="White" RenderTransformOrigin="1.464,0.554" Height="12"/>
         <Label x:Name="UserIdLabel" Content="" HorizontalAlignment="Left" Margin="765,23,0,0" VerticalAlignment="Top" Background="White" Height="12" RenderTransformOrigin="3.067,0.42"/>
-        <Label x:Name="TitleLabel" Content="Title" HorizontalAlignment="Left" Margin="33,79,0,0" VerticalAlignment="Top" Width="98" Height="32" FontSize="17" Foreground="#0D47A1" Background="#E3F2FD"/>
-        <Label x:Name="DescriptionLabel" Content="Description" HorizontalAlignment="Left" Margin="33,131,0,0" VerticalAlignment="Top" Width="98" Height="32" FontSize="17" Foreground="#0D47A1" Background="#E3F2FD"/>
+        <Rectangle HorizontalAlignment="Left" Height="350" Width="578" Margin="20,65,0,0" Stroke="Black" VerticalAlignment="Top" Fill="#E3F2FD"/>
+        <Label x:Name="TitleLabel" Content="Title" HorizontalAlignment="Left" Margin="29,79,0,0" VerticalAlignment="Top" Width="102" Height="32" FontSize="17" Foreground="#0D47A1" Background="#B6D4F5" FontWeight="Bold"/>
+        <Label x:Name="DescriptionLabel" Content="Description" HorizontalAlignment="Left" Margin="29,131,0,0" VerticalAlignment="Top" Width="102" Height="32" FontSize="17" Foreground="#0D47A1" Background="#B6D4F5" FontWeight="Bold"/>
         <TextBox x:Name="DescriptionTextbox" HorizontalAlignment="Left" Margin="139,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="446" Height="97" BorderBrush="#333333" FontSize="14"/>
-        <Label x:Name="DateLabel" Content="Date" HorizontalAlignment="Left" Margin="33,250,0,0" VerticalAlignment="Top" Width="98" Height="32" FontSize="17" RenderTransformOrigin="0.051,0.573" Foreground="#0D47A1" Background="#E3F2FD"/>
+        <Label x:Name="DateLabel" Content="Date" HorizontalAlignment="Left" Margin="29,250,0,0" VerticalAlignment="Top" Width="102" Height="32" FontSize="17" RenderTransformOrigin="0.051,0.573" Foreground="#0D47A1" Background="#B6D4F5" FontWeight="Bold"/>
         <DatePicker x:Name="PeriodDatePicker" HorizontalAlignment="Left" Margin="139,250,0,0" VerticalAlignment="Top" Width="165" Height="32" BorderBrush="#333333" FontSize="14"/>
-        <Label x:Name="PeriodLabel" Content="Period" HorizontalAlignment="Left" Margin="33,301,0,0" VerticalAlignment="Top" Width="98" Height="32" FontSize="17" Foreground="#0D47A1" RenderTransformOrigin="0.528,-0.362" Background="#E3F2FD"/>
+        <Label x:Name="PeriodLabel" Content="Period" HorizontalAlignment="Left" Margin="29,301,0,0" VerticalAlignment="Top" Width="102" Height="32" FontSize="17" Foreground="#0D47A1" RenderTransformOrigin="0.528,-0.362" Background="#B6D4F5" FontWeight="Bold"/>
         <ComboBox x:Name="HourComboBox" HorizontalAlignment="Left" Margin="139,301,0,0" VerticalAlignment="Top" Width="79" Height="32" FontSize="14"/>
         <ComboBox x:Name="MinuteComboBox" HorizontalAlignment="Left" Margin="225,301,0,0" VerticalAlignment="Top" Width="79" Height="32" FontSize="14"/>
         <TextBox x:Name="TitleTextBox" HorizontalAlignment="Left" Margin="139,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" Height="32" BorderBrush="#333333" FontSize="16"/>
         <TextBlock HorizontalAlignment="Left" Margin="219,302,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" Width="6" Height="27" IsEnabled="False" FontSize="20                    " Foreground="#31473A"/>
-        <Label x:Name="StatusLabel" Content="Status" HorizontalAlignment="Left" Margin="33,360,0,0" VerticalAlignment="Top" Width="98" Height="32" FontSize="17" Foreground="#0D47A1" RenderTransformOrigin="0.528,-0.362" Background="#E3F2FD"/>
+        <Label x:Name="StatusLabel" Content="Status" HorizontalAlignment="Left" Margin="29,360,0,0" VerticalAlignment="Top" Width="102" Height="32" FontSize="17" Foreground="#0D47A1" RenderTransformOrigin="0.528,-0.362" Background="#B6D4F5" FontWeight="Bold"/>
         <ComboBox x:Name="StatusComboBox" HorizontalAlignment="Left" Margin="139,360,0,0" VerticalAlignment="Top" Width="131" Height="32" FontSize="14"/>
-        <Border BorderBrush="#607B8B" BorderThickness="0.8" Width="98" Height="32" Margin="33,360,669,58"/>
-        <Border BorderBrush="#607B8B" BorderThickness="0.8" Width="98" Height="32" Margin="33,79,669,339"/>
-        <Border BorderBrush="#607B8B" BorderThickness="0.8" Width="98" Height="32" Margin="33,250,669,168"/>
-        <Border BorderBrush="#00688B" BorderThickness="1" CornerRadius="10" Margin="22,60,204,34" />
-        <Border BorderBrush="#607B8B" BorderThickness="0.8" Width="98" Height="32" Margin="33,301,669,101"/>
-        <Border BorderBrush="#607B8B" BorderThickness="0.8" Width="98" Height="32" Margin="33,360,669,42"/>
-        <Border BorderBrush="#607B8B" BorderThickness="0.8" Width="98" Height="32" Margin="33,250,669,152"/>
-        <Border BorderBrush="#607B8B" BorderThickness="0.8" Width="98" Height="32" Margin="33,360,669,42"/>
-        <Border BorderBrush="#607B8B" BorderThickness="0.8" Width="98" Height="32" Margin="33,79,669,323"/>
-        <Border BorderBrush="#607B8B" BorderThickness="0.8" Width="98" Height="32" Margin="33,131,669,271"/>
+        <Border BorderBrush="#607B8B" BorderThickness="0.8" Height="32" Margin="29,250,669,152"/>
+        <Border BorderBrush="#607B8B" BorderThickness="0.8" Height="32" Margin="29,300,669,102"/>
+        <Border BorderBrush="#607B8B" BorderThickness="0.8" Height="32" Margin="29,360,669,42"/>
+        <Border BorderBrush="#607B8B" BorderThickness="0.8" Height="32" Margin="29,79,669,323"/>
+        <Border BorderBrush="#607B8B" BorderThickness="0.8" Height="32" Margin="29,131,669,271"/>
     </Grid>
 </Window>
