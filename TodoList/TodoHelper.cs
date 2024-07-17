@@ -6,13 +6,13 @@ using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Windows;
-using Repositories;
+using Repositories.Entities;
 
 
 
 namespace TodoList
 {
-    public class TodoService : INotifyPropertyChanged
+    public class TodoHelper : INotifyPropertyChanged
     {
         private ObservableCollection<Todo> _allTodos = new();
         private string FileToDo
@@ -23,7 +23,7 @@ namespace TodoList
             }
         }
 
-        public TodoService()
+        public TodoHelper()
         {
             LoadToDo();
         }
