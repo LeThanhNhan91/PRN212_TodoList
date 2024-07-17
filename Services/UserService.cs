@@ -42,5 +42,10 @@ namespace Services
         {
             _repo.Delete(x);
         }
+
+        public User Login(string email, string password)
+        {
+            return _repo.GetUser().FirstOrDefault(u => u.Email ==  email && u.Password == password);
+        }
     }
 }
