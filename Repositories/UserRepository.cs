@@ -16,6 +16,20 @@ namespace Repositories
             return _context.Users.ToList();
         }
 
+        public void Add(User user)
+        {
+            _context = new();
+            _context.Users.Add(user);
+            _context.SaveChanges();
+        }
+
+        public void Update(User user)
+        {
+            _context = new();
+            _context.Users.Update(user);
+            _context.SaveChanges();
+        }
+
         public void Delete(User x)
         {
             _context = new();
