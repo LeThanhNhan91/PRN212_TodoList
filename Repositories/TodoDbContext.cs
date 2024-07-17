@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Repositories.Entities;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
