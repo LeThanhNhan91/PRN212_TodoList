@@ -26,13 +26,20 @@ namespace TodoList
             todos = new TodoService();
             DataContext = todos;
             Closing += Window_Closing;
-          
+
+            _notifyIcon = new TaskbarIcon();
+            _notifyIcon.Icon = new System.Drawing.Icon("favicon.ico");
+            _notifyIcon.ToolTipText = "TodoList Application";
+            _notifyIcon.TrayLeftMouseUp += NotifyIcon_TrayLeftMouseUp;
         }
 
-        
+
+        private void NotifyIcon_TrayLeftMouseUp(object sender, RoutedEventArgs e)
+        {
+            ShowWindow();
+        }
 
 
-       
         private void AddTodoButton_clicked(object sender, RoutedEventArgs e)
         {
             if (NewTodoTextBox.Text.Length == 0)
@@ -49,10 +56,18 @@ namespace TodoList
         }
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            
-           todos.SaveFileToDo();
+            todos.SaveFileToDo();
             e.Cancel = true;
             this.Hide();
+            if (_notifyIcon == null)
+            {
+                _notifyIcon = new TaskbarIcon();
+                _notifyIcon.Icon = new System.Drawing.Icon("favicon.ico");
+                
+
+            }
+            _notifyIcon.ShowBalloonTip("TodoList", "The application has been minimized to the system tray.", BalloonIcon.Info);
+
         }
         public void ShowWindow()
         {
