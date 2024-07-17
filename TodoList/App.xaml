@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:TodoList"
              StartupUri="LoginWindow.xaml">
     <Application.Resources>
-        
+        <Style TargetType="TextBox">
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style> 
     </Application.Resources>
 </Application>
