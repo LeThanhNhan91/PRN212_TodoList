@@ -24,13 +24,12 @@ namespace GUI
     {
         private UserService _service = new();
 
-
         public AdminWindow()
         {
             InitializeComponent();
         }
 
-       private void LoadDataGrid()
+        private void LoadDataGrid()
         {
             UserListDataGrid.ItemsSource = null;
             UserListDataGrid.ItemsSource = _service.GetAllUsers();
@@ -43,12 +42,23 @@ namespace GUI
 
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
-            //trang detail
+            UserDetailWindow detail = new();
+            detail.ShowDialog();
+            LoadDataGrid();
         }
 
         private void UpdateButton_Click(object sender, RoutedEventArgs e)
         {
-            //trang detail
+            User selectedUser = UserListDataGrid.SelectedItem as User;
+            if (selectedUser == null)
+            {
+                MessageBox.Show("Please select a user before updating!", "Select one", MessageBoxButton.OK, MessageBoxImage.Stop);
+                return;
+            }
+
+            UserDetailWindow detail = new UserDetailWindow(selectedUser);
+            detail.ShowDialog();
+            LoadDataGrid();
         }
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
@@ -61,17 +71,26 @@ namespace GUI
             }
             MessageBoxResult answer = MessageBox.Show("Do you really want to delete this user", "Confirm?", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (answer == MessageBoxResult.No)
-             return;
+                return;
 
             _service.DeleteUser(selected);
-
             LoadDataGrid();
-
         }
 
         private void QuitButton_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
         }
+
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+            string email = EmailTextBox.Text.ToLower();
+            string fullName = FullNameTextBox.Text.ToLower();
+
+            List<User> result = _service.SearchUserByEmailAndFullName(email, fullName);
+            UserListDataGrid.ItemsSource = null;
+            UserListDataGrid.ItemsSource = result;
+        }
     }
 }
+
