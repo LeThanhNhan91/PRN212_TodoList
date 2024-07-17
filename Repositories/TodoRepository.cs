@@ -1,40 +1,40 @@
-﻿using System;
+﻿using Repositories.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Repositories.Entities;
 
 namespace Repositories
 {
-    public class UserRepository
+    public class TodoRepository
     {
         private TodoDbContext _context;
 
-        public List<User> GetUser()
+        public List<Todo> GetAll()
         {
             _context = new();
-            return _context.Users.ToList();
+            return _context.Todos.ToList();
         }
 
-        public void Add(User user)
+        public void Add(Todo Todo)
         {
             _context = new();
-            _context.Users.Add(user);
+            _context.Todos.Add(Todo);
             _context.SaveChanges();
         }
 
-        public void Update(User user)
+        public void Update(Todo Todo)
         {
             _context = new();
-            _context.Users.Update(user);
+            _context.Todos.Update(Todo);
             _context.SaveChanges();
         }
 
-        public void Delete(User x)
+        public void Delete(Todo x)
         {
             _context = new();
-            _context.Users.Remove(x);
+            _context.Todos.Remove(x);
             _context.SaveChanges();
         }
     }

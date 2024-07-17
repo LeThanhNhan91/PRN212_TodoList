@@ -1,5 +1,5 @@
 ﻿using Microsoft.IdentityModel.Tokens;
-using Repositories;
+using Repositories.Entities;
 using Services;
 using System;
 using System.Collections.Generic;

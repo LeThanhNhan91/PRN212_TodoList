@@ -3346,34 +3346,19 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\pc\\.nuget\\packages\\": {}
-=======
     "C:\\Users\\admin\\.nuget\\packages\\": {}
->>>>>>> d3dc1aef42e1774fb63f15394da1dd8e99e7d79c
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\TodoList\\GUI.csproj",
+      "projectUniqueName": "E:\\PRN212_TodoList\\TodoList\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\TodoList\\GUI.csproj",
-      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\TodoList\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "E:\\12-7\\PRN212_TodoList\\TodoList\\GUI.csproj",
-      "projectName": "GUI",
-      "projectPath": "E:\\12-7\\PRN212_TodoList\\TodoList\\GUI.csproj",
+      "projectPath": "E:\\PRN212_TodoList\\TodoList\\GUI.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "E:\\12-7\\PRN212_TodoList\\TodoList\\obj\\",
+      "outputPath": "E:\\PRN212_TodoList\\TodoList\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> d3dc1aef42e1774fb63f15394da1dd8e99e7d79c
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3381,19 +3366,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-<<<<<<< HEAD
-            "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\Services\\Services.csproj": {
-              "projectPath": "D:\\CSharp_Projects\\PRN212\\Assignment\\PRN212_TodoList\\Services\\Services.csproj"
-=======
-            "E:\\12-7\\PRN212_TodoList\\Services\\Services.csproj": {
-              "projectPath": "E:\\12-7\\PRN212_TodoList\\Services\\Services.csproj"
->>>>>>> d3dc1aef42e1774fb63f15394da1dd8e99e7d79c
+            "E:\\PRN212_TodoList\\Services\\Services.csproj": {
+              "projectPath": "E:\\PRN212_TodoList\\Services\\Services.csproj"
             }
           }
         }
@@ -3437,7 +3418,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

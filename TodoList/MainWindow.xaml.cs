@@ -10,7 +10,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using GUI;
 using Hardcodet.Wpf.TaskbarNotification;
-using Repositories;
+using Repositories.Entities;
 
 namespace TodoList
 {
@@ -55,7 +55,7 @@ namespace TodoList
             todos.AllTodos.Add(todo);
             NewTodoTextBox.Clear();
         }
-        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        public void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             todos.SaveFileToDo();
             e.Cancel = true;
@@ -86,6 +86,5 @@ namespace TodoList
         {
 
         }
-
-	}
+    }
 }
