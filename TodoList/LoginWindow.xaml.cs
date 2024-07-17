@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TodoList;
 
 namespace GUI
 {
@@ -30,7 +31,7 @@ namespace GUI
 		private void LoginButton_Click(object sender, RoutedEventArgs e)
 		{
 			string email = EmailTextBox.Text;
-			string password = PasswordTextBox.Text;
+			string password = UserPasswordBox.Password;
 			if (email.IsNullOrEmpty() || password.IsNullOrEmpty())
 			{
 				MessageBox.Show("Email or password is empty!", "Field required", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -46,7 +47,7 @@ namespace GUI
 			switch (user.Role)
 			{
 				case 0: (new AdminWindow()).ShowDialog(); break;
-				case 1: break;
+				case 1: (new MainWindow()).ShowDialog(); break;
 				default: 
 					MessageBox.Show("You do not have the permission for the system", "Not allowed", MessageBoxButton.OK, MessageBoxImage.Error); 
 					break;
