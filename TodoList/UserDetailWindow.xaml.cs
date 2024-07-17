@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Services.Validation;
 
 namespace GUI
 {
@@ -25,14 +26,28 @@ namespace GUI
 
         public User SelectedUser { get; set; }
 
+        private EmailValidation _emailValidation;
+
         public UserDetailWindow(User user = null)
         {
             InitializeComponent();
             SelectedUser = user;
+            _emailValidation = new EmailValidation();
+            DataContext = _emailValidation;
+
+            if (SelectedUser != null)
+            {
+                _emailValidation.Email = SelectedUser.Email;
+            }
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
+            //khi validate các text box khác, nhân chỉ cần để namevalidate.HasError vào condition này là được
+            if (_emailValidation.HasError || _emailValidation.Email is null)
+            {
+                return;
+            }
             User user = SelectedUser ?? new User();
 
             if (UserRoleCombobox.SelectedItem is ComboBoxItem selectedItem)
@@ -78,6 +93,8 @@ namespace GUI
         {
             this.Close();
         }
+
+        
     }
 }
 
