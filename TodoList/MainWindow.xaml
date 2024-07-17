@@ -15,7 +15,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <ListView Grid.Row="0" SelectionChanged="ListView_SelectionChanged" Grid.ColumnSpan="2">
-            <DataGrid Name="TasksDataGrid" Grid.Row="1" AutoGenerateColumns="False" Margin="10" Height="172" Width="524">
+            <DataGrid Name="TasksDataGrid" Grid.Row="1" AutoGenerateColumns="False" Margin="10" Height="172" Width="524" SelectionChanged="TasksDataGrid_SelectionChanged">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Monday" Binding="{Binding Monday}" Width="Auto"/>
                     <DataGridTextColumn Header="Tuesday" Binding="{Binding Tuesday}" Width="Auto"/>
@@ -27,9 +27,9 @@
                 </DataGrid.Columns>
             </DataGrid>
             <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center" Margin="10">
-                <Button Name="PrevWeekButton" Content="Previous Week" Width="100" Margin="5"/>
-                
-                <Button Name="NextWeekButton" Content="Next Week" Width="100" Margin="5"/>
+                <Button Name="PrevWeekButton" Content="Previous Week" Width="100" Margin="5" Click="PrevWeekButton_Click"/>
+                <Label Name="CurrentWeekLabel" Content="15/07/2024 - 20/07/2024" Margin="10" VerticalAlignment="Center"/>
+                <Button Name="NextWeekButton" Content="Next Week" Width="100" Margin="5" Click="NextWeekButton_Click"/>
             </StackPanel>
         </ListView>
         <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Margin="0,394,0,0" Grid.RowSpan="2">

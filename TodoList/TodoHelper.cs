@@ -12,7 +12,7 @@ using Repositories.Entities;
 
 namespace TodoList
 {
-    public class TodoService : INotifyPropertyChanged
+    public class TodoHelper : INotifyPropertyChanged
     {
         private ObservableCollection<Todo> _allTodos = new();
         private string FileToDo
@@ -23,7 +23,7 @@ namespace TodoList
             }
         }
 
-        public TodoService()
+        public TodoHelper()
         {
             LoadToDo();
         }

@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "E:\\PRN212_TodoList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|e:\\prn212_todolist\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|e:\\prn212_todolist\\todolist\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|e:\\prn212_todolist\\todolist\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|e:\\prn212_todolist\\repositories\\entities\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\entities\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|e:\\prn212_todolist\\todolist\\todohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\todohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|e:\\prn212_todolist\\services\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|solutionrelative:services\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|e:\\prn212_todolist\\repositories\\models\\todoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\models\\todoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|e:\\prn212_todolist\\repositories\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|e:\\prn212_todolist\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|e:\\prn212_todolist\\repositories\\todorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,14 +43,6 @@
       "RelativeMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|e:\\prn212_todolist\\repositories\\entities\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\entities\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|e:\\prn212_todolist\\repositories\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|e:\\prn212_todolist\\todolist\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -35,24 +51,12 @@
       "RelativeMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\tododbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|e:\\prn212_todolist\\todolist\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|e:\\prn212_todolist\\todolist\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|e:\\prn212_todolist\\todolist\\createtaskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\createtaskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|e:\\prn212_todolist\\todolist\\createtaskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\createtaskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|e:\\prn212_todolist\\todolist\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,37 +66,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "E:\\PRN212_TodoList\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
-              "ToolTip": "E:\\PRN212_TodoList\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Repositories\\UserRepository.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAA5wCEAAAAiAAAA",
+              "DocumentIndex": 5,
+              "Title": "TodoViewModel.cs",
+              "DocumentMoniker": "E:\\PRN212_TodoList\\Repositories\\Models\\TodoViewModel.cs",
+              "RelativeDocumentMoniker": "Repositories\\Models\\TodoViewModel.cs",
+              "ToolTip": "E:\\PRN212_TodoList\\Repositories\\Models\\TodoViewModel.cs",
+              "RelativeToolTip": "Repositories\\Models\\TodoViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T08:17:23.455Z",
+              "WhenOpened": "2024-07-17T08:45:14.131Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\PRN212_TodoList\\TodoList\\appsettings.json",
-              "RelativeDocumentMoniker": "TodoList\\appsettings.json",
-              "ToolTip": "E:\\PRN212_TodoList\\TodoList\\appsettings.json",
-              "RelativeToolTip": "TodoList\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-17T08:16:43.128Z",
+              "DocumentIndex": 4,
+              "Title": "TodoService.cs",
+              "DocumentMoniker": "E:\\PRN212_TodoList\\Services\\TodoService.cs",
+              "RelativeDocumentMoniker": "Services\\TodoService.cs",
+              "ToolTip": "E:\\PRN212_TodoList\\Services\\TodoService.cs",
+              "RelativeToolTip": "Services\\TodoService.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAAFIAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T08:14:24.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TodoHelper.cs",
+              "DocumentMoniker": "E:\\PRN212_TodoList\\TodoList\\TodoHelper.cs",
+              "RelativeDocumentMoniker": "TodoList\\TodoHelper.cs",
+              "ToolTip": "E:\\PRN212_TodoList\\TodoList\\TodoHelper.cs",
+              "RelativeToolTip": "TodoList\\TodoHelper.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAABsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T07:51:26.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "E:\\PRN212_TodoList\\TodoList\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "TodoList\\MainWindow.xaml",
+              "ToolTip": "E:\\PRN212_TodoList\\TodoList\\MainWindow.xaml",
+              "RelativeToolTip": "TodoList\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-17T07:51:26.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\PRN212_TodoList\\TodoList\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TodoList\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\PRN212_TodoList\\TodoList\\MainWindow.xaml.cs",
+              "RelativeToolTip": "TodoList\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAawJwAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T07:51:26.52Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Todo.cs",
+              "DocumentMoniker": "E:\\PRN212_TodoList\\Repositories\\Entities\\Todo.cs",
+              "RelativeDocumentMoniker": "Repositories\\Entities\\Todo.cs",
+              "ToolTip": "E:\\PRN212_TodoList\\Repositories\\Entities\\Todo.cs",
+              "RelativeToolTip": "Repositories\\Entities\\Todo.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T07:51:26.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "TodoRepository.cs",
               "DocumentMoniker": "E:\\PRN212_TodoList\\Repositories\\TodoRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\TodoRepository.cs",
@@ -105,33 +160,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\PRN212_TodoList\\Repositories\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Repositories\\Entities\\User.cs",
               "ToolTip": "E:\\PRN212_TodoList\\Repositories\\Entities\\User.cs",
               "RelativeToolTip": "Repositories\\Entities\\User.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-17T08:15:15.082Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TodoService.cs",
-              "DocumentMoniker": "E:\\PRN212_TodoList\\Services\\TodoService.cs",
-              "RelativeDocumentMoniker": "Services\\TodoService.cs",
-              "ToolTip": "E:\\PRN212_TodoList\\Services\\TodoService.cs",
-              "RelativeToolTip": "Services\\TodoService.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAAAFIAAAA6AAAA",
+              "DocumentIndex": 7,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "E:\\PRN212_TodoList\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
+              "ToolTip": "E:\\PRN212_TodoList\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\UserRepository.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA5wCEAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T08:14:24.665Z",
+              "WhenOpened": "2024-07-17T08:17:23.455Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "UserService.cs",
               "DocumentMoniker": "E:\\PRN212_TodoList\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Services\\UserService.cs",
@@ -144,20 +199,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Todo.cs",
-              "DocumentMoniker": "E:\\PRN212_TodoList\\Repositories\\Entities\\Todo.cs",
-              "RelativeDocumentMoniker": "Repositories\\Entities\\Todo.cs",
-              "ToolTip": "E:\\PRN212_TodoList\\Repositories\\Entities\\Todo.cs",
-              "RelativeToolTip": "Repositories\\Entities\\Todo.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T07:51:26.523Z",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\PRN212_TodoList\\TodoList\\appsettings.json",
+              "RelativeDocumentMoniker": "TodoList\\appsettings.json",
+              "ToolTip": "E:\\PRN212_TodoList\\TodoList\\appsettings.json",
+              "RelativeToolTip": "TodoList\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-17T08:16:43.128Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "TodoDbContext.cs",
               "DocumentMoniker": "E:\\PRN212_TodoList\\Repositories\\TodoDbContext.cs",
               "RelativeDocumentMoniker": "Repositories\\TodoDbContext.cs",
@@ -170,19 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "E:\\PRN212_TodoList\\TodoList\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "TodoList\\MainWindow.xaml",
-              "ToolTip": "E:\\PRN212_TodoList\\TodoList\\MainWindow.xaml",
-              "RelativeToolTip": "TodoList\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-17T07:51:26.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "CreateTaskWindow.xaml.cs",
               "DocumentMoniker": "E:\\PRN212_TodoList\\TodoList\\CreateTaskWindow.xaml.cs",
               "RelativeDocumentMoniker": "TodoList\\CreateTaskWindow.xaml.cs",
@@ -195,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "CreateTaskWindow.xaml",
               "DocumentMoniker": "E:\\PRN212_TodoList\\TodoList\\CreateTaskWindow.xaml",
               "RelativeDocumentMoniker": "TodoList\\CreateTaskWindow.xaml",
@@ -203,32 +246,6 @@
               "RelativeToolTip": "TodoList\\CreateTaskWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-07-17T07:51:26.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TodoService.cs",
-              "DocumentMoniker": "E:\\PRN212_TodoList\\TodoList\\TodoService.cs",
-              "RelativeDocumentMoniker": "TodoList\\TodoService.cs",
-              "ToolTip": "E:\\PRN212_TodoList\\TodoList\\TodoService.cs",
-              "RelativeToolTip": "TodoList\\TodoService.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAcwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T07:51:26.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\PRN212_TodoList\\TodoList\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "TodoList\\MainWindow.xaml.cs",
-              "ToolTip": "E:\\PRN212_TodoList\\TodoList\\MainWindow.xaml.cs",
-              "RelativeToolTip": "TodoList\\MainWindow.xaml.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAADoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T07:51:26.52Z",
               "EditorCaption": ""
             }
           ]
