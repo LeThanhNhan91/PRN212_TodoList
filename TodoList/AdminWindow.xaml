@@ -28,6 +28,7 @@
         <Button x:Name="UpdateButton" Content="Update" HorizontalAlignment="Left" Height="34" Margin="731,318,0,0" VerticalAlignment="Top" Width="98" Background="#0D47A1" Foreground="White" FontSize="16" Click="UpdateButton_Click"/>
         <Button x:Name="DeleteButton" Content="Delete" HorizontalAlignment="Left" Height="34" Margin="731,370,0,0" VerticalAlignment="Top" Width="98" Background="#0D47A1" Foreground="White" FontSize="16" Click="DeleteButton_Click"/>
         <Button x:Name="QuitButton" Content="Quit" HorizontalAlignment="Left" Height="35" Margin="731,438,0,0" VerticalAlignment="Top" Width="98" Background="#0D47A1" Foreground="White" FontSize="16" RenderTransformOrigin="0.522,1.498" Click="QuitButton_Click"/>
+        <Button x:Name="LogOutButton" Content="Log out" HorizontalAlignment="Left" Height="35" Margin="625,213,0,0" VerticalAlignment="Top" Width="98" Background="#0D47A1" Foreground="White" FontSize="16" RenderTransformOrigin="0.522,1.498" Click="LogOutButton_Click"/>
 
     </Grid>
 </Window>

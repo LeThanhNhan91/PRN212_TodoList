@@ -13,6 +13,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace GUI
@@ -23,6 +24,9 @@ namespace GUI
     public partial class AdminWindow : Window
     {
         private UserService _service = new();
+        private readonly Window _loginWindow;
+
+        public User User { get; set; }
 
         public AdminWindow()
         {
@@ -31,6 +35,7 @@ namespace GUI
 
         private void LoadDataGrid()
         {
+            HelloMsgLabel.Content = User.FullName;
             UserListDataGrid.ItemsSource = null;
             UserListDataGrid.ItemsSource = _service.GetAllUsers();
         }
@@ -90,6 +95,14 @@ namespace GUI
             List<User> result = _service.SearchUserByEmailAndFullName(email, fullName);
             UserListDataGrid.ItemsSource = null;
             UserListDataGrid.ItemsSource = result;
+        }
+
+        private void LogOutButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            LoginWindow login = new LoginWindow();           
+            login.ShowDialog();
+            
         }
     }
 }

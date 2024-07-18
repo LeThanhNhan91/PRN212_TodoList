@@ -43,15 +43,30 @@ namespace GUI
 				MessageBox.Show("Wrong email or password!", "Incorrect credential", MessageBoxButton.OK);
 				return;
 			}
-			this.Hide();
-			switch (user.Role)
+            this.Hide();
+            switch (user.Role)
 			{
-				case 0: (new AdminWindow()).ShowDialog(); break;
-				case 1: (new MainWindow()).ShowDialog(); break;
+				case 0: 
+					AdminWindow admin = new AdminWindow();
+					admin.User = user;
+					admin.ShowDialog(); 
+					break;
+				case 1:
+					MainWindow customer = new MainWindow();
+					customer.User = user;
+					customer.ShowDialog();
+
+					break;
 				default: 
 					MessageBox.Show("You do not have the permission for the system", "Not allowed", MessageBoxButton.OK, MessageBoxImage.Error); 
 					break;
 			}
+			this.Close();
 		}
-	}
+
+        //private void Window_Loaded(object sender, RoutedEventArgs e)
+        //{
+        //    LoginWindow login = null;
+        //}
+    }
 }
