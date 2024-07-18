@@ -3346,19 +3346,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\GUI.csproj",
+      "projectUniqueName": "E:\\PRN212_TodoList\\TodoList\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\GUI.csproj",
-      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\obj\\",
+      "projectPath": "E:\\PRN212_TodoList\\TodoList\\GUI.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "E:\\PRN212_TodoList\\TodoList\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3373,8 +3373,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\FPTUNI\\5\\PRN212_Todolist\\Services\\Services.csproj": {
-              "projectPath": "C:\\FPTUNI\\5\\PRN212_Todolist\\Services\\Services.csproj"
+            "E:\\PRN212_TodoList\\Services\\Services.csproj": {
+              "projectPath": "E:\\PRN212_TodoList\\Services\\Services.csproj"
             }
           }
         }

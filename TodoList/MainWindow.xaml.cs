@@ -9,7 +9,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Hardcodet.Wpf.TaskbarNotification;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualBasic.ApplicationServices;
 using Repositories;
+using Services;
+using Services.Models;
 
 namespace TodoList
 {
@@ -20,12 +24,21 @@ namespace TodoList
     {
         private TaskbarIcon _notifyIcon;
         private TodoService todos;
+        private DateOnly _currentWeekStart;
+        private Services.TodoService todoService;
+
+
+
+        public Repositories.User User { get; set; }
         public MainWindow()
         {
             InitializeComponent();
             todos = new TodoService();
             DataContext = todos;
+            _currentWeekStart = DateOnly.FromDateTime(DateTime.Now);
+            todoService = new();
             Closing += Window_Closing;
+
 
             _notifyIcon = new TaskbarIcon();
             _notifyIcon.Icon = new System.Drawing.Icon("favicon.ico");
@@ -76,12 +89,72 @@ namespace TodoList
             this.Activate();
         }
 
+        private void GetCurrentWeek()
+        {
+            while (_currentWeekStart.DayOfWeek != DayOfWeek.Monday)
+            {
+                _currentWeekStart = _currentWeekStart.AddDays(-1);
+            }
+        }
+
+        private void UpdateWeekLabel()
+        {
+            var weekEnd = _currentWeekStart.AddDays(6);
+            CurrentWeekLabel.Content = $"{_currentWeekStart:dd/MM/yyyy} - {weekEnd:dd/MM/yyyy}";
+        }
+
+        private void LoadTasks()
+        {
+            TasksDataGrid.ItemsSource = null;
+            var tasks = todoService.GetAllTasks()
+                        .Where(t => t.UserId == User.UserId
+                            && t.Time >= _currentWeekStart.ToDateTime(TimeOnly.MinValue)
+                            && t.Time < _currentWeekStart.AddDays(7).ToDateTime(TimeOnly.MinValue))
+                        .ToList();
+
+
+            var currentWeekTasks = tasks.GroupBy(t => t.Time.DayOfWeek)
+                                        .ToDictionary(g => g.Key, g => g.Select(t => t.Title).FirstOrDefault());
+
+            var viewModel = new TaskViewModel
+            {
+                Monday = currentWeekTasks.ContainsKey(DayOfWeek.Monday) ? currentWeekTasks[DayOfWeek.Monday] : string.Empty,
+                Tuesday = currentWeekTasks.ContainsKey(DayOfWeek.Tuesday) ? currentWeekTasks[DayOfWeek.Tuesday] : string.Empty,
+                Wednesday = currentWeekTasks.ContainsKey(DayOfWeek.Wednesday) ? currentWeekTasks[DayOfWeek.Wednesday] : string.Empty,
+                Thursday = currentWeekTasks.ContainsKey(DayOfWeek.Thursday) ? currentWeekTasks[DayOfWeek.Thursday] : string.Empty,
+                Friday = currentWeekTasks.ContainsKey(DayOfWeek.Friday) ? currentWeekTasks[DayOfWeek.Friday] : string.Empty,
+                Saturday = currentWeekTasks.ContainsKey(DayOfWeek.Saturday) ? currentWeekTasks[DayOfWeek.Saturday] : string.Empty,
+                Sunday = currentWeekTasks.ContainsKey(DayOfWeek.Sunday) ? currentWeekTasks[DayOfWeek.Sunday] : string.Empty
+            };
+
+            TasksDataGrid.ItemsSource = new List<TaskViewModel> { viewModel };
+        }
+
+        private void PrevWeekButton_Click(object sender, RoutedEventArgs e)
+        {
+            _currentWeekStart = _currentWeekStart.AddDays(-7);
+            UpdateWeekLabel();
+            LoadTasks();
+        }
+
+        private void NextWeekButton_Click(object sender, RoutedEventArgs e)
+        {
+            _currentWeekStart = _currentWeekStart.AddDays(7);
+            UpdateWeekLabel();
+            LoadTasks();
+        }
+
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
 
         private void NewTodoTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TasksDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
