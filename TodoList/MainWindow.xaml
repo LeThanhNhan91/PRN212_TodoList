@@ -7,7 +7,9 @@
         xmlns:local="clr-namespace:TodoList"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
-        Closing="Window_Closing" Loaded="Window_Loaded">
+        Closing="Window_Closing" Loaded="Window_Loaded"
+        ResizeMode="NoResize"
+        >
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -19,6 +21,7 @@
         </Grid.RowDefinitions>
         <DataGrid x:Name="TasksDataGrid" AutoGenerateColumns="False" Margin="0,0,228,151">
             <DataGrid.Columns>
+                <DataGridTextColumn Header="Time" Binding="{Binding Time}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Monday" Binding="{Binding Monday}" Width="*"/>
                 <DataGridTextColumn Header="Tuesday" Binding="{Binding Tuesday}" Width="*"/>
                 <DataGridTextColumn Header="Wednesday" Binding="{Binding Wednesday}" Width="*"/>
