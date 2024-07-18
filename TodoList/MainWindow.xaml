@@ -7,37 +7,36 @@
         xmlns:local="clr-namespace:TodoList"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
-        Closing="Window_Closing">
+        Closing="Window_Closing" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="273*"/>
-            <ColumnDefinition Width="127*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <ListView Grid.Row="0" SelectionChanged="ListView_SelectionChanged" Grid.ColumnSpan="2">
-            <DataGrid x:Name="TasksDataGrid" Height="283" Width="587" SelectionChanged="TasksDataGrid_SelectionChanged" AutoGenerateColumns="False">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="Monday" Binding="{Binding Monday}" Width="*"/>
-                    <DataGridTextColumn Header="Tuesday" Binding="{Binding Tuesday}" Width="*"/>
-                    <DataGridTextColumn Header="Wednesday" Binding="{Binding Wednesday}" Width="*"/>
-                    <DataGridTextColumn Header="Thursday" Binding="{Binding Thursday}" Width="*"/>
-                    <DataGridTextColumn Header="Friday" Binding="{Binding Friday}" Width="*"/>
-                    <DataGridTextColumn Header="Saturday" Binding="{Binding Saturday}" Width="*"/>
-                    <DataGridTextColumn Header="Sunday" Binding="{Binding Sunday}" Width="*"/>
-                </DataGrid.Columns>
-            </DataGrid>
-            <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center" Margin="10">
-                <Button Name="PrevWeekButton" Content="Previous Week" Width="100" Margin="5" Click="PrevWeekButton_Click"/>
-                <Label Name="CurrentWeekLabel" Content="15/07/2024 - 20/=7/2024" Margin="10" VerticalAlignment="Center"/>
-                <Button Name="NextWeekButton" Content="Next Week" Width="100" Margin="5" Click="NextWeekButton_Click"/>
-            </StackPanel>
-        </ListView>
-        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Margin="0,394,0,0" Grid.RowSpan="2">
-            <TextBox x:Name="NewTodoTextBox" Width="150" Margin="10" TextChanged="NewTodoTextBox_TextChanged"></TextBox>
+        <DataGrid x:Name="TasksDataGrid" AutoGenerateColumns="False" Margin="0,0,228,151">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Monday" Binding="{Binding Monday}" Width="*"/>
+                <DataGridTextColumn Header="Tuesday" Binding="{Binding Tuesday}" Width="*"/>
+                <DataGridTextColumn Header="Wednesday" Binding="{Binding Wednesday}" Width="*"/>
+                <DataGridTextColumn Header="Thursday" Binding="{Binding Thursday}" Width="*"/>
+                <DataGridTextColumn Header="Friday" Binding="{Binding Friday}" Width="*"/>
+                <DataGridTextColumn Header="Saturday" Binding="{Binding Saturday}" Width="*"/>
+                <DataGridTextColumn Header="Sunday" Binding="{Binding Sunday}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Left" Margin="100,302,0,86" Width="386">
+            <Button Name="PrevWeekButton" Content="Previous Week" Width="100" Margin="5" Click="PrevWeekButton_Click"/>
+            <Label Name="CurrentWeekLabel" Content="15/07/2024 - 21/07/2024" Margin="10" VerticalAlignment="Center"/>
+            <Button Name="NextWeekButton" Content="Next Week" Width="100" Margin="5" Click="NextWeekButton_Click"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,394,0,0">
             <Button Content="Add Todo" Click="AddTodoButton_clicked" Margin="10"></Button>
+            <Button Content="Update Todo" Margin="10"></Button>
+            <Button Content="Update Todo" Margin="10"></Button>
         </StackPanel>
     </Grid>
 </Window>

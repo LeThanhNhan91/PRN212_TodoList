@@ -23,9 +23,9 @@ namespace TodoList
     public partial class MainWindow : Window
     {
         private TaskbarIcon _notifyIcon;
-        private TodoService todos;
-        private DateOnly _currentWeekStart;
-        private Services.TodoService todoService;
+        private TodoService todos = new TodoService();
+        private DateOnly _currentWeekStart = DateOnly.FromDateTime(DateTime.Now);
+        private Services.TodoService todoService = new Services.TodoService();
 
 
 
@@ -35,10 +35,8 @@ namespace TodoList
             InitializeComponent();
             todos = new TodoService();
             DataContext = todos;
-            _currentWeekStart = DateOnly.FromDateTime(DateTime.Now);
-            todoService = new();
             Closing += Window_Closing;
-
+            GetCurrentWeek();
 
             _notifyIcon = new TaskbarIcon();
             _notifyIcon.Icon = new System.Drawing.Icon("favicon.ico");
@@ -53,20 +51,20 @@ namespace TodoList
         }
 
 
-        private void AddTodoButton_clicked(object sender, RoutedEventArgs e)
-        {
-            if (NewTodoTextBox.Text.Length == 0)
-            {
-                System.Windows.MessageBox.Show("Please text to the box", "Error input", MessageBoxButton.OK, MessageBoxImage.None);
-                return;
-            }
-            Todo todo = new Todo()
-            {
-                Description = NewTodoTextBox.Text,
-            };
-            todos.AllTodos.Add(todo);
-            NewTodoTextBox.Clear();
-        }
+        //private void AddTodoButton_clicked(object sender, RoutedEventArgs e)
+        //{
+        //    if (NewTodoTextBox.Text.Length == 0)
+        //    {
+        //        System.Windows.MessageBox.Show("Please text to the box", "Error input", MessageBoxButton.OK, MessageBoxImage.None);
+        //        return;
+        //    }
+        //    Todo todo = new Todo()
+        //    {
+        //        Description = NewTodoTextBox.Text,
+        //    };
+        //    todos.AllTodos.Add(todo);
+        //    NewTodoTextBox.Clear();
+        //}
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             todos.SaveFileToDo();
@@ -99,10 +97,17 @@ namespace TodoList
 
         private void UpdateWeekLabel()
         {
+           
             var weekEnd = _currentWeekStart.AddDays(6);
             CurrentWeekLabel.Content = $"{_currentWeekStart:dd/MM/yyyy} - {weekEnd:dd/MM/yyyy}";
+            LoadTasks();
         }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            UpdateWeekLabel();
+            LoadTasks();
+        }
         private void LoadTasks()
         {
             TasksDataGrid.ItemsSource = null;
@@ -154,9 +159,10 @@ namespace TodoList
 
         }
 
-        private void TasksDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void AddTodoButton_clicked(object sender, RoutedEventArgs e)
         {
 
         }
+
     }
 }
