@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
         Title="Task Detail Window" Height="450" Width="800"
-        Background="#BBDEFB"
+        Background="#BBDEFB" ResizeMode="NoResize"
         >
     <Grid Loaded="Grid_Loaded">
         <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Margin="701,389,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.726,0.754" Width="89" Height="35" FontSize="20" Background="#0D47A1" Foreground="White" Click="SaveButton_Click" FontWeight="Bold"/>
