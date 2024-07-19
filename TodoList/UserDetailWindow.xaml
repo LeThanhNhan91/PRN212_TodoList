@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="UserDetailWindow" Height="412" Width="823" Background="#BBDEFB" Loaded="Window_Loaded">
+        Title="UserDetailWindow" Height="412" Width="823" Background="#BBDEFB" Loaded="Window_Loaded" ResizeMode="NoResize">
     <Grid Margin="0,0,0,13">
         <Label x:Name="UsersModelLabel" Content="Create | Update Users" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="241" Foreground="#FF0D47A1" Height="45" FontSize="20" FontWeight="Bold"/>
         <Rectangle HorizontalAlignment="Center" Height="328" Margin="0,55,0,0" Stroke="Black" VerticalAlignment="Top" Width="780" Fill ="#E3F2FD"/>

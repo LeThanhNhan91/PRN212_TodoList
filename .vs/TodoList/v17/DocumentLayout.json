@@ -3,7 +3,26 @@
   "WorkspaceRootPath": "D:\\Pull\\PRN212_TodoList\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|D:\\Pull\\PRN212_TodoList\\todolist\\taskdetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\admin\\desktop\\project\\prn212_todolist\\todolist\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\admin\\desktop\\project\\prn212_todolist\\todolist\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\admin\\desktop\\project\\prn212_todolist\\todolist\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/NVM_SQLEXPRESS/ToDoDB/sa/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\admin\\desktop\\project\\prn212_todolist\\todolist\\taskdetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 5c3a86518a776c2b56ff8781d4d0c45ca388c635
       "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\taskdetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,6 +38,7 @@
       "RelativeMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|solutionrelative:services\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|D:\\Pull\\PRN212_TodoList\\todolist\\userdetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\userdetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -29,14 +49,27 @@
     {
       "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|D:\\Pull\\PRN212_TodoList\\todolist\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|c:\\users\\admin\\desktop\\project\\prn212_todolist\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 5c3a86518a776c2b56ff8781d4d0c45ca388c635
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|D:\\Pull\\PRN212_TodoList\\todolist\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|D:\\Pull\\PRN212_TodoList\\todolist\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|c:\\users\\admin\\desktop\\project\\prn212_todolist\\repositories\\migrations\\tododbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\migrations\\tododbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\admin\\desktop\\project\\prn212_todolist\\todolist\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+>>>>>>> 5c3a86518a776c2b56ff8781d4d0c45ca388c635
     }
   ],
   "DocumentGroupContainers": [
@@ -46,11 +79,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 0,
+=======
+          "SelectedChildIndex": 6,
+>>>>>>> 5c3a86518a776c2b56ff8781d4d0c45ca388c635
           "Children": [
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
+=======
+              "DocumentIndex": 4,
+>>>>>>> 5c3a86518a776c2b56ff8781d4d0c45ca388c635
               "Title": "TaskDetailWindow.xaml.cs",
               "DocumentMoniker": "D:\\Pull\\PRN212_TodoList\\TodoList\\TaskDetailWindow.xaml.cs",
               "RelativeDocumentMoniker": "TodoList\\TaskDetailWindow.xaml.cs",
@@ -58,11 +99,11 @@
               "RelativeToolTip": "TodoList\\TaskDetailWindow.xaml.cs",
               "ViewState": "AQIAAGMAAAAAAAAAAAAqwHQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T07:54:56.895Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-18T07:54:56.895Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "UserDetailWindow.xaml",
               "DocumentMoniker": "D:\\Pull\\PRN212_TodoList\\TodoList\\UserDetailWindow.xaml",
@@ -98,17 +139,20 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+=======
+              "DocumentIndex": 5,
+>>>>>>> 5c3a86518a776c2b56ff8781d4d0c45ca388c635
               "Title": "TaskDetailWindow.xaml",
               "DocumentMoniker": "D:\\Pull\\PRN212_TodoList\\TodoList\\TaskDetailWindow.xaml",
               "RelativeDocumentMoniker": "TodoList\\TaskDetailWindow.xaml",
               "ToolTip": "D:\\Pull\\PRN212_TodoList\\TodoList\\TaskDetailWindow.xaml",
               "RelativeToolTip": "TodoList\\TaskDetailWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-18T07:54:54.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-18T07:54:54.532Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "UserDetailWindow.xaml.cs",
               "DocumentMoniker": "D:\\Pull\\PRN212_TodoList\\TodoList\\UserDetailWindow.xaml.cs",
@@ -146,6 +190,91 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
+=======
+              "DocumentIndex": 8,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAgwDIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T07:06:56.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\AdminWindow.xaml",
+              "RelativeDocumentMoniker": "TodoList\\AdminWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\AdminWindow.xaml*",
+              "RelativeToolTip": "TodoList\\AdminWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-18T06:46:15.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\AdminWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TodoList\\AdminWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\AdminWindow.xaml.cs",
+              "RelativeToolTip": "TodoList\\AdminWindow.xaml.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwCUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T06:45:19.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TodoList\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "TodoList\\LoginWindow.xaml.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAIAwwEAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T06:43:12.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "TodoList\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\LoginWindow.xaml",
+              "RelativeToolTip": "TodoList\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-18T06:43:10.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbo.Users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/NVM_SQLEXPRESS/ToDoDB/sa/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-18T06:40:29.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\appsettings.json",
+              "RelativeDocumentMoniker": "TodoList\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\appsettings.json",
+              "RelativeToolTip": "TodoList\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-18T06:39:51.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+>>>>>>> 5c3a86518a776c2b56ff8781d4d0c45ca388c635
               "Title": "TodoService.cs",
               "DocumentMoniker": "D:\\Pull\\PRN212_TodoList\\TodoList\\TodoService.cs",
               "RelativeDocumentMoniker": "TodoList\\TodoService.cs",
@@ -154,6 +283,33 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAcwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-18T06:39:00.963Z"
+<<<<<<< HEAD
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TodoDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Repositories\\Migrations\\TodoDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Repositories\\Migrations\\TodoDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\Repositories\\Migrations\\TodoDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Repositories\\Migrations\\TodoDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAABEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T06:38:44.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\App.xaml",
+              "RelativeDocumentMoniker": "TodoList\\App.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\project\\PRN212_TodoList\\TodoList\\App.xaml",
+              "RelativeToolTip": "TodoList\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-18T06:37:05.014Z",
+              "EditorCaption": ""
+>>>>>>> 5c3a86518a776c2b56ff8781d4d0c45ca388c635
             }
           ]
         }

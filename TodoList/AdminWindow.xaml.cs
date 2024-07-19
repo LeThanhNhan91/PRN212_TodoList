@@ -35,7 +35,7 @@ namespace GUI
 
         private void LoadDataGrid()
         {
-            HelloMsgLabel.Content = User.FullName;
+            HelloMsgLabel.Content = "Hello, " + User.FullName;
             UserListDataGrid.ItemsSource = null;
             UserListDataGrid.ItemsSource = _service.GetAllUsers();
         }
