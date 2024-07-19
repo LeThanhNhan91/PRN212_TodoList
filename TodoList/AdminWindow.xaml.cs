@@ -102,7 +102,6 @@ namespace GUI
             this.Close();
             LoginWindow login = new LoginWindow();           
             login.ShowDialog();
-            
         }
     }
 }

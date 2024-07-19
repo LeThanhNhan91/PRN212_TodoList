@@ -3342,23 +3342,24 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "Hardcodet.Wpf.TaskbarNotification >= 1.0.5",
+      "Repositories >= 1.0.0",
       "Services >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\pc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PRN212_TodoList\\TodoList\\GUI.csproj",
+      "projectUniqueName": "D:\\Pull\\PRN212_TodoList\\TodoList\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "E:\\PRN212_TodoList\\TodoList\\GUI.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "E:\\PRN212_TodoList\\TodoList\\obj\\",
+      "projectPath": "D:\\Pull\\PRN212_TodoList\\TodoList\\GUI.csproj",
+      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+      "outputPath": "D:\\Pull\\PRN212_TodoList\\TodoList\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3366,15 +3367,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "E:\\PRN212_TodoList\\Services\\Services.csproj": {
-              "projectPath": "E:\\PRN212_TodoList\\Services\\Services.csproj"
+            "D:\\Pull\\PRN212_TodoList\\Repositories\\Repositories.csproj": {
+              "projectPath": "D:\\Pull\\PRN212_TodoList\\Repositories\\Repositories.csproj"
+            },
+            "D:\\Pull\\PRN212_TodoList\\Services\\Services.csproj": {
+              "projectPath": "D:\\Pull\\PRN212_TodoList\\Services\\Services.csproj"
             }
           }
         }
@@ -3418,7 +3421,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

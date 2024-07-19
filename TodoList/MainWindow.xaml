@@ -31,7 +31,7 @@
             </DataGrid>
             <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center" Margin="10">
                 <Button Name="PrevWeekButton" Content="Previous Week" Width="100" Margin="5" Click="PrevWeekButton_Click"/>
-                <Label Name="CurrentWeekLabel" Content="15/07/2024 - 20/=7/2024" Margin="10" VerticalAlignment="Center"/>
+                <Label Name="CurrentWeekLabel" Content="15/07/2024 - 20/7/2024" Margin="10" VerticalAlignment="Center"/>
                 <Button Name="NextWeekButton" Content="Next Week" Width="100" Margin="5" Click="NextWeekButton_Click"/>
             </StackPanel>
         </ListView>

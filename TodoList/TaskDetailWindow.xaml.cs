@@ -103,15 +103,18 @@ namespace GUI
 			DateTime date = new DateTime(rawDate.Year, rawDate.Month, rawDate.Day, hour, minute, minute, 0);
 			bool status = false;
 			// Create
-			if (string.IsNullOrEmpty(NoteIdLabel.Content.ToString()))
+			if (Task == null)
 			{
-				if (string.IsNullOrEmpty(TitleTextBox.Text))
+				if (string.IsNullOrEmpty(NoteIdLabel.Content.ToString()))
 				{
-					MessageBox.Show("Title can't be empty", "Error Notification", MessageBoxButton.OK, MessageBoxImage.Error);
-					return;
+					if (string.IsNullOrEmpty(TitleTextBox.Text))
+					{
+						MessageBox.Show("Title can't be empty", "Error Notification", MessageBoxButton.OK, MessageBoxImage.Error);
+						return;
+					}
+					task.Title = TitleTextBox.Text;
+					task.Description = DescriptionTextbox.Text;
 				}
-				task.Title = TitleTextBox.Text;
-				task.Description = DescriptionTextbox.Text;
 			}
 			// Update
 			else
