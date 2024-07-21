@@ -1,4 +1,4 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿//using Microsoft.IdentityModel.Tokens;
 using Services;
 using System;
 using System.Collections.Generic;
@@ -32,41 +32,49 @@ namespace GUI
 		{
 			string email = EmailTextBox.Text;
 			string password = UserPasswordBox.Password;
-			if (email.IsNullOrEmpty() || password.IsNullOrEmpty())
+			if (email == "" || password == "")
 			{
 				MessageBox.Show("Email or password is empty!", "Field required", MessageBoxButton.OK, MessageBoxImage.Error);
 				return;
 			}
-			var user = _service.Login(email, password);
-			if (user == null)
+			try
 			{
-				MessageBox.Show("Wrong email or password!", "Incorrect credential", MessageBoxButton.OK);
-				return;
+				var user = _service.Login(email, password);
+				if (user == null)
+				{
+					MessageBox.Show("Wrong email or password!", "Incorrect credential", MessageBoxButton.OK);
+					return;
+				}
+				this.Hide();
+				switch (user.Role)
+				{
+					case 0:
+						AdminWindow admin = new AdminWindow();
+						admin.User = user;
+						admin.ShowDialog();
+						break;
+					case 1:
+						MainWindow customer = new MainWindow();
+						customer.User = user;
+						customer.ShowDialog();
+						break;
+					default:
+						MessageBox.Show("You do not have the permission for the system", "Not allowed", MessageBoxButton.OK, MessageBoxImage.Error);
+						break;
+				}
+				this.Close();
 			}
-            this.Hide();
-            switch (user.Role)
+			catch (Exception ex)
 			{
-				case 0: 
-					AdminWindow admin = new AdminWindow();
-					admin.User = user;
-					admin.ShowDialog(); 
-					break;
-				case 1:
-					MainWindow customer = new MainWindow();
-					customer.User = user;
-					customer.ShowDialog();
-
-					break;
-				default: 
-					MessageBox.Show("You do not have the permission for the system", "Not allowed", MessageBoxButton.OK, MessageBoxImage.Error); 
-					break;
+				MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
 			}
-			this.Close();
 		}
 
-        //private void Window_Loaded(object sender, RoutedEventArgs e)
-        //{
-        //    LoginWindow login = null;
-        //}
-    }
+		private void RegisterButton_Click(object sender, RoutedEventArgs e)
+		{
+			RegisterWindow registerWindow = new RegisterWindow();
+			registerWindow.Show();
+			this.Close();
+		}
+	}
 }
