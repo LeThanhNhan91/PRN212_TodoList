@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="UserDetailWindow" Height="412" Width="823" Background="#BBDEFB" Loaded="Window_Loaded" ResizeMode="NoResize">
+        Title="UserDetailWindow" Height="412" Width="823" Background="#BBDEFB" Loaded="Window_Loaded">
     <Grid Margin="0,0,0,13">
         <Label x:Name="UsersModelLabel" Content="Create | Update Users" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="241" Foreground="#FF0D47A1" Height="45" FontSize="20" FontWeight="Bold"/>
         <Rectangle HorizontalAlignment="Center" Height="328" Margin="0,55,0,0" Stroke="Black" VerticalAlignment="Top" Width="780" Fill ="#E3F2FD"/>
@@ -17,20 +17,28 @@
 
         <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Height="30" Margin="112,134,0,0"
                  TextWrapping="Wrap" VerticalAlignment="Top" Width="234" TabIndex="0"
-                 VerticalContentAlignment="Center" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"/>
+                 VerticalContentAlignment="Center" Text="{Binding EmailValidation.Email, UpdateSourceTrigger=PropertyChanged}"/>
 
-        <TextBlock x:Name="ErrorMessage" Text="{Binding ErrorMessage}"
+        <TextBlock x:Name="ErrorMessage" Text="{Binding EmailValidation.ErrorMessage}"
                    Foreground="Red" 
                    VerticalAlignment="Top" Margin="112,170,0,0"/>
+
         <Label Content="FullName" HorizontalAlignment="Left" Height="35" Margin="439,69,0,0" VerticalAlignment="Top" Width="85" Foreground="#FF0A5DA1" FontWeight="Bold" FontSize="16"/>
-        <TextBox x:Name="FullNameTextBox" HorizontalAlignment="Left" Height="30" Margin="524,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" TabIndex="0" />
+        <TextBox x:Name="FullNameTextBox" HorizontalAlignment="Left" Height="30" Margin="524,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" TabIndex="0" Text="{Binding FullNameValidation.FullName, UpdateSourceTrigger=PropertyChanged}" />
+        <TextBlock Text="{Binding FullNameValidation.ErrorMessage}"
+           Foreground="Red" 
+           VerticalAlignment="Top" Margin="439,105,65,0"/>
+
         <Label Content="Password" HorizontalAlignment="Left" Height="35" Margin="439,134,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF0A5DA1" FontWeight="Bold" FontSize="16"/>
-        <TextBox x:Name="PasswordTextBox" HorizontalAlignment="Left" Height="30" Margin="524,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" TabIndex="0"/>
+        <TextBox x:Name="PasswordTextBox" HorizontalAlignment="Left" Height="30" Margin="524,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" TabIndex="0" Text="{Binding PasswordValidation.Password, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Text="{Binding PasswordValidation.ErrorMessage}"
+            Foreground="Red" 
+            VerticalAlignment="Top" Margin="439,173,65,0"/>
+        
         <Label Content="Role" HorizontalAlignment="Left" Height="35" Margin="27,207,0,0" VerticalAlignment="Top" Width="80" Foreground="#FF0A5DA1" FontWeight="Bold" FontSize="16"/>
         <ComboBox x:Name="UserRoleCombobox" HorizontalAlignment="Left" Height="35" Margin="112,207,0,0" VerticalAlignment="Top" Width="234">
             <ComboBoxItem Content="Customer" Tag="1"></ComboBoxItem>
             <ComboBoxItem Content="Admin" Tag="0"></ComboBoxItem>
         </ComboBox>
-
     </Grid>
 </Window>
