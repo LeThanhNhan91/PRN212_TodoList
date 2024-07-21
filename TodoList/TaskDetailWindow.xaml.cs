@@ -32,6 +32,7 @@ namespace GUI
 
 		private void TitleTextBox_TextChanged(object sender, TextChangedEventArgs e)
 		{
+			
 
 		}
 
@@ -75,7 +76,7 @@ namespace GUI
 			{
 				title = "Update task";
 				NoteIdLabel.Content = Task.NoteId;
-				TitleTextBox.Text = Task.Title;
+                TitleTextBox.Text = Task.Title;
 				DescriptionTextbox.Text = Task.Description;
 				PeriodDatePicker.Text = Task.Time.ToString();
 				date = Task.Time;
@@ -86,7 +87,9 @@ namespace GUI
 			{
 				title = "Create task";
 				StatusComboBox.IsEnabled = false;
-			}
+				
+
+            }
 			PeriodDatePicker.SelectedDate = date;
 			HourComboBox.SelectedValue = date.Hour;
 			MinuteComboBox.SelectedValue = date.Minute;

@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
         Title="Login" Height="450" Width="800" Background="#BBDEFB"
-        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
-        >
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" >
+    <Window.InputBindings>
+        <KeyBinding Key="Enter" Command="{Binding LoginCommand}" />
+    </Window.InputBindings>
     <Grid>
         <Rectangle HorizontalAlignment="Center" Fill="#E3F2FD" Height="304" Stroke="Black" VerticalAlignment="Top" Width="482"
                    RadiusX="20" RadiusY="20" Margin="0,95,0,0"
@@ -29,7 +31,7 @@
                HorizontalContentAlignment="Center" FontWeight="Bold"
                />
         <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Center" Height="48" Margin="0,304,0,0" VerticalAlignment="Top" Width="160" 
-                Background="#0D47A1" Foreground="White" Click="LoginButton_Click"
+                Background="#0D47A1" Foreground="White" Click="LoginButton_Click" Command="{Binding LoginCommand}
                 VerticalContentAlignment="Center"
                 />
         <PasswordBox x:Name="UserPasswordBox" HorizontalAlignment="Left" Height="34" Margin="305,224,0,0" VerticalAlignment="Top" Width="315"

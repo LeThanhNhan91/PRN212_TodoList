@@ -1,86 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\",
+  "WorkspaceRootPath": "C:\\FPTUNI\\5\\PRN212_Todolist\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\todolist\\userdetailwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\userdetailwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\services\\validation\\passwordvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|solutionrelative:services\\validation\\passwordvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\services\\validation\\fullnamevalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|solutionrelative:services\\validation\\fullnamevalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\services\\validation\\ivalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|solutionrelative:services\\validation\\ivalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\services\\validation\\uservalidationwrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|solutionrelative:services\\validation\\uservalidationwrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\todolist\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\services\\validation\\emailvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|solutionrelative:services\\validation\\emailvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\todolist\\userdetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\userdetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\todolist\\loginwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\loginwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\todolist\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\todolist\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\todolist\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\todolist\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\todolist\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\todolist\\taskdetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\taskdetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\todolist\\taskdetailwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\taskdetailwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\services\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|solutionrelative:services\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\todolist\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\fptuni\\5\\prn212_todolist\\todolist\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\users\\nguyen binh\\desktop\\prn212_todolist\\todolist\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|c:\\fptuni\\5\\prn212_todolist\\repositories\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290130C-00E4-42B7-9E23-D739EF7BA7B1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\fptuni\\5\\prn212_todolist\\todolist\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\fptuni\\5\\prn212_todolist\\todolist\\taskdetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\taskdetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\fptuni\\5\\prn212_todolist\\todolist\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\fptuni\\5\\prn212_todolist\\todolist\\taskdetailwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\taskdetailwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|c:\\fptuni\\5\\prn212_todolist\\todolist\\loginwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{4E1F56B9-98BA-4DF4-8323-283649836BF8}|TodoList\\GUI.csproj|solutionrelative:todolist\\loginwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|c:\\fptuni\\5\\prn212_todolist\\services\\validation\\emailvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BD16B8E-0B8F-4A39-AC24-9FE4D737C55B}|Services\\Services.csproj|solutionrelative:services\\validation\\emailvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,8 +42,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
@@ -101,255 +57,105 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IValidation.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Services\\Validation\\IValidation.cs",
-              "RelativeDocumentMoniker": "Services\\Validation\\IValidation.cs",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Services\\Validation\\IValidation.cs",
-              "RelativeToolTip": "Services\\Validation\\IValidation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TodoList\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "TodoList\\LoginWindow.xaml.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T12:50:43.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PasswordValidation.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Services\\Validation\\PasswordValidation.cs",
-              "RelativeDocumentMoniker": "Services\\Validation\\PasswordValidation.cs",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Services\\Validation\\PasswordValidation.cs",
-              "RelativeToolTip": "Services\\Validation\\PasswordValidation.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAqwEEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T12:22:30.017Z",
+              "WhenOpened": "2024-07-21T15:32:43.618Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserValidationWrapper.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Services\\Validation\\UserValidationWrapper.cs",
-              "RelativeDocumentMoniker": "Services\\Validation\\UserValidationWrapper.cs",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Services\\Validation\\UserValidationWrapper.cs",
-              "RelativeToolTip": "Services\\Validation\\UserValidationWrapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAA6AAAA",
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "TodoList\\LoginWindow.xaml",
+              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\LoginWindow.xaml",
+              "RelativeToolTip": "TodoList\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-21T15:32:41.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Todo.cs",
+              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\Repositories\\Todo.cs",
+              "RelativeDocumentMoniker": "Repositories\\Todo.cs",
+              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\Repositories\\Todo.cs",
+              "RelativeToolTip": "Repositories\\Todo.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T11:46:29.205Z",
+              "WhenOpened": "2024-07-21T14:56:53.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserDetailWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\UserDetailWindow.xaml",
-              "RelativeDocumentMoniker": "TodoList\\UserDetailWindow.xaml",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\UserDetailWindow.xaml",
-              "RelativeToolTip": "TodoList\\UserDetailWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-21T10:49:04.944Z",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TodoList\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\MainWindow.xaml.cs",
+              "RelativeToolTip": "TodoList\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAJUAAAAAAAAAAAAWwKQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T14:28:11.219Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FullNameValidation.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Services\\Validation\\FullNameValidation.cs",
-              "RelativeDocumentMoniker": "Services\\Validation\\FullNameValidation.cs",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Services\\Validation\\FullNameValidation.cs",
-              "RelativeToolTip": "Services\\Validation\\FullNameValidation.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAA5wEMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T11:43:31.133Z",
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "TodoList\\MainWindow.xaml",
+              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\MainWindow.xaml",
+              "RelativeToolTip": "TodoList\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-21T14:28:08.557Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\appsettings.json",
-              "RelativeDocumentMoniker": "TodoList\\appsettings.json",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\appsettings.json",
-              "RelativeToolTip": "TodoList\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-21T11:04:54.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Services\\UserService.cs",
-              "RelativeToolTip": "Services\\UserService.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T12:37:34.746Z",
+              "Title": "TaskDetailWindow.xaml",
+              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\TaskDetailWindow.xaml",
+              "RelativeDocumentMoniker": "TodoList\\TaskDetailWindow.xaml",
+              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\TaskDetailWindow.xaml",
+              "RelativeToolTip": "TodoList\\TaskDetailWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-21T14:26:49.984Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "EmailValidation.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Services\\Validation\\EmailValidation.cs",
+              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\Services\\Validation\\EmailValidation.cs",
               "RelativeDocumentMoniker": "Services\\Validation\\EmailValidation.cs",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Services\\Validation\\EmailValidation.cs",
+              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\Services\\Validation\\EmailValidation.cs",
               "RelativeToolTip": "Services\\Validation\\EmailValidation.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAA5wCkAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T12:23:40.113Z",
+              "WhenOpened": "2024-07-21T14:25:45.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\LoginWindow.xaml.cs",
-              "RelativeDocumentMoniker": "TodoList\\LoginWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\LoginWindow.xaml.cs",
-              "RelativeToolTip": "TodoList\\LoginWindow.xaml.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAYwD8AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T11:10:04.714Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserDetailWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\UserDetailWindow.xaml.cs",
-              "RelativeDocumentMoniker": "TodoList\\UserDetailWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\UserDetailWindow.xaml.cs",
-              "RelativeToolTip": "TodoList\\UserDetailWindow.xaml.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwFcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T10:49:04.956Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\LoginWindow.xaml",
-              "RelativeDocumentMoniker": "TodoList\\LoginWindow.xaml",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\LoginWindow.xaml",
-              "RelativeToolTip": "TodoList\\LoginWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-21T11:09:59.459Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\App.xaml",
-              "RelativeDocumentMoniker": "TodoList\\App.xaml",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\App.xaml",
-              "RelativeToolTip": "TodoList\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-21T11:04:32.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 3,
               "Title": "TaskDetailWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\TaskDetailWindow.xaml.cs",
+              "DocumentMoniker": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\TaskDetailWindow.xaml.cs",
               "RelativeDocumentMoniker": "TodoList\\TaskDetailWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\TaskDetailWindow.xaml.cs",
+              "ToolTip": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\TaskDetailWindow.xaml.cs",
               "RelativeToolTip": "TodoList\\TaskDetailWindow.xaml.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAqwHQAAAAFAAAA",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAlwJEAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T10:49:04.88Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "TodoList\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\MainWindow.xaml.cs",
-              "RelativeToolTip": "TodoList\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAGkAAAAAAAAAAAA7wHYAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T10:49:04.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "TodoList\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\MainWindow.xaml",
-              "RelativeToolTip": "TodoList\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-21T10:49:04.95Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AdminWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\AdminWindow.xaml.cs",
-              "RelativeDocumentMoniker": "TodoList\\AdminWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\AdminWindow.xaml.cs",
-              "RelativeToolTip": "TodoList\\AdminWindow.xaml.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAvwCUAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T10:49:04.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AdminWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\AdminWindow.xaml",
-              "RelativeDocumentMoniker": "TodoList\\AdminWindow.xaml",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\AdminWindow.xaml",
-              "RelativeToolTip": "TodoList\\AdminWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-21T11:07:56.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "TaskDetailWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\TaskDetailWindow.xaml",
-              "RelativeDocumentMoniker": "TodoList\\TaskDetailWindow.xaml",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\TaskDetailWindow.xaml",
-              "RelativeToolTip": "TodoList\\TaskDetailWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-21T10:49:04.953Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TodoService.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Services\\TodoService.cs",
-              "RelativeDocumentMoniker": "Services\\TodoService.cs",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Services\\TodoService.cs",
-              "RelativeToolTip": "Services\\TodoService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T10:49:04.958Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "TodoService.cs",
-              "DocumentMoniker": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\TodoService.cs",
-              "RelativeDocumentMoniker": "TodoList\\TodoService.cs",
-              "ToolTip": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\TodoService.cs",
-              "RelativeToolTip": "TodoList\\TodoService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAcwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T10:49:04.965Z"
+              "WhenOpened": "2024-07-21T10:49:04.88Z",
+              "EditorCaption": ""
             }
           ]
         }

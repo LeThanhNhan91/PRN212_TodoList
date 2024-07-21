@@ -3347,19 +3347,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nguyen Binh\\.nuget\\packages\\": {}
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\GUI.csproj",
+      "projectUniqueName": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\GUI.csproj",
-      "packagesPath": "C:\\Users\\Nguyen Binh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\TodoList\\obj\\",
+      "projectPath": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\GUI.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "C:\\FPTUNI\\5\\PRN212_Todolist\\TodoList\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Nguyen Binh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3367,17 +3367,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Repositories\\Repositories.csproj": {
-              "projectPath": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Repositories\\Repositories.csproj"
+            "C:\\FPTUNI\\5\\PRN212_Todolist\\Repositories\\Repositories.csproj": {
+              "projectPath": "C:\\FPTUNI\\5\\PRN212_Todolist\\Repositories\\Repositories.csproj"
             },
-            "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\Nguyen Binh\\Desktop\\PRN212_TodoList\\Services\\Services.csproj"
+            "C:\\FPTUNI\\5\\PRN212_Todolist\\Services\\Services.csproj": {
+              "projectPath": "C:\\FPTUNI\\5\\PRN212_Todolist\\Services\\Services.csproj"
             }
           }
         }

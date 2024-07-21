@@ -20,9 +20,9 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <Button Content="Add Todo" Click="AddTodoButton_clicked" Margin="555,340,95,15"/>
-        <Button Content="Update Todo" Margin="295,340,400,15"></Button>
-        <Button Content="Update Todo" Margin="74,340,636,15"></Button>
-        <DataGrid x:Name="ToDoDataGrid" HorizontalAlignment="Left" Height="253" Margin="10,10,0,0" VerticalAlignment="Top" Width="522" AutoGenerateColumns="False" CellEditEnding="ToDoDataGrid_CellEditEnding">
+        <Button x:Name="UpdateButton" Content="Update Todo" Margin="295,340,400,15" Click="UpdateButton_Click"></Button>
+        <Button x:Name="CreateButton" Content="Create Todo" Margin="74,340,636,15" Click="CreateButton_Click" ></Button>
+        <DataGrid x:Name="ToDoDataGrid" HorizontalAlignment="Left" Height="253" Margin="10,10,0,0" VerticalAlignment="Top" Width="522" AutoGenerateColumns="False" CurrentCellChanged="ToDoDataGrid_CurrentCellChanged" SelectionChanged="ToDoDataGrid_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Time" Width="150" Binding="{Binding Time}"/>
                 <DataGridTextColumn Header="Title" Width="50" Binding="{Binding Title}"/>

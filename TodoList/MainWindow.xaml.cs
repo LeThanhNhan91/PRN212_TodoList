@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GUI;
 using Hardcodet.Wpf.TaskbarNotification;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic.ApplicationServices;
@@ -92,19 +93,19 @@ namespace TodoList
             _current = DateOnly.FromDateTime(DateTime.Now);
             ToDoDataGrid.ItemsSource = todoService.GetTasksByUserAndTime(User.UserId, _current);
         }
-        private void ToDoDataGrid_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
-        {
-            if (e.Column is DataGridCheckBoxColumn && e.EditAction == DataGridEditAction.Commit)
-            {
-                var item = e.Row.Item as Todo; // Replace YourDataType with the actual type of the items in your DataGrid
-                if (item != null)
-                {
-                    // Assuming you have a method UpdateDatabase that updates the database
-                    item.IsDone = !item.IsDone;
-                    todoService.UpdateTask(item);
-                }
-            }
-        }
+        //private void ToDoDataGrid_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
+        //{
+        //    if (e.Column is DataGridCheckBoxColumn && e.EditAction == DataGridEditAction.Commit)
+        //    {
+        //        var item = e.Row.Item as Todo; 
+        //        if (item != null)
+        //        {
+
+        //            item.IsDone = !item.IsDone;
+        //            todoService.UpdateTask(item);
+        //        }
+        //    }
+        //}
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -127,5 +128,55 @@ namespace TodoList
             ToDoDataGrid.ItemsSource = null;
             ToDoDataGrid.ItemsSource = todoService.GetTasksByUserAndTime(User.UserId, date);
         }
+
+        
+
+        private void CreateButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            TaskDetailWindow taskDetailWindow = new TaskDetailWindow();
+            taskDetailWindow.User = User;
+            taskDetailWindow.ShowDialog();
+            LoadTasks();
+        }
+
+        private void UpdateButton_Click(object sender, RoutedEventArgs e)
+        {
+            var selected  = ToDoDataGrid.SelectedItem as Todo;
+            
+            if (selected == null)
+            {
+                MessageBox.Show("Please Select Before Updating", "Selected One", MessageBoxButton.OK, MessageBoxImage.Stop);
+                return;
+            }
+            TaskDetailWindow taskDetailWindow = new();
+            taskDetailWindow.Task = selected;
+            taskDetailWindow.User = User;
+            taskDetailWindow.ShowDialog();
+            LoadTasks();
+
+        }
+
+        private void ToDoDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+        private void ToDoDataGrid_CurrentCellChanged(object sender, EventArgs e)
+        {
+           
+            if (ToDoDataGrid.CurrentColumn is DataGridCheckBoxColumn)
+            {
+                
+                var item = ToDoDataGrid.CurrentItem as Todo;
+                if (item != null)
+                {
+                    
+                    item.IsDone = !item.IsDone;
+                   
+                    todoService.UpdateTask(item);
+                }
+            }
+        }
+
     }
 }
