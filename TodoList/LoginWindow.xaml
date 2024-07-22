@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
+        KeyDown="Window_KeyDown"
         Title="Login" Height="450" Width="800" Background="#BBDEFB"
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize" >
     <Window.InputBindings>

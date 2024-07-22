@@ -103,7 +103,7 @@ namespace GUI
 			int minute = string.IsNullOrEmpty(MinuteComboBox.SelectedItem.ToString()) ? 0 : int.Parse(MinuteComboBox.SelectedItem.ToString());
 			DateTime rawDate = PeriodDatePicker.SelectedDate == null ? DateTime.Now : PeriodDatePicker.SelectedDate.Value;
 			//---------------------------------------------------
-			DateTime date = new DateTime(rawDate.Year, rawDate.Month, rawDate.Day, hour, minute, minute, 0);
+			DateTime date = new DateTime(rawDate.Year, rawDate.Month, rawDate.Day, hour, minute, 00, 0);
 			bool status = false;
 			// Create
 			if (Task == null)

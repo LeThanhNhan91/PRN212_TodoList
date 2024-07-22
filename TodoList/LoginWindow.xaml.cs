@@ -76,5 +76,13 @@ namespace GUI
 			registerWindow.Show();
 			this.Close();
 		}
-	}
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+
+                LoginButton_Click(LoginButton, new RoutedEventArgs());
+            }
+        }
+    }
 }

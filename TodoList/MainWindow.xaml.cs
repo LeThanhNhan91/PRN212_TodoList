@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using GUI;
 using Hardcodet.Wpf.TaskbarNotification;
 using Microsoft.EntityFrameworkCore;
@@ -26,6 +27,7 @@ namespace TodoList
         private TodoService todos = new TodoService();
         private DateOnly _current = DateOnly.FromDateTime(DateTime.Now);
         private Services.TodoService todoService = new Services.TodoService();
+        private DispatcherTimer _timer;
 
         public Repositories.User User { get; set; }
         public MainWindow()
@@ -39,8 +41,42 @@ namespace TodoList
             _notifyIcon.Icon = new System.Drawing.Icon("favicon.ico");
             _notifyIcon.ToolTipText = "TodoList Application";
             _notifyIcon.TrayLeftMouseUp += NotifyIcon_TrayLeftMouseUp;
+            _notifyIcon.ContextMenu = (ContextMenu)FindResource("NotifyIconContextMenu");
+
+            //------------- khai bao thông báo giờ gần đến
+            _timer = new DispatcherTimer();
+            _timer.Interval = TimeSpan.FromMinutes(1); 
+            _timer.Tick += Timer_Tick;
+            _timer.Start();
+
         }
 
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            CheckUpcomingTasks();
+        }
+
+        private void CheckUpcomingTasks()
+        {
+            var tasks = todoService.GetTasksByUserAndTime(User.UserId, _current);
+            DateTime now = DateTime.Now;
+
+            foreach (var task in tasks)
+            {
+                DateTime taskTime = task.Time;
+                var minutesUntilTask = (taskTime - now).TotalMinutes;
+
+                if (minutesUntilTask <= 5 && minutesUntilTask > 4)
+                {
+                    _notifyIcon.ShowBalloonTip("Upcoming Task", $"5 minutes left until {task.Title} starts", BalloonIcon.Info);
+                }
+                else if (minutesUntilTask <= 0 && minutesUntilTask >= -1) 
+                {
+                    _notifyIcon.ShowBalloonTip("Task Starting", $"Task {task.Title} is starting now!", BalloonIcon.Info);
+                }
+
+            }
+        }
 
         private void NotifyIcon_TrayLeftMouseUp(object sender, RoutedEventArgs e)
         {
@@ -71,10 +107,10 @@ namespace TodoList
             {
                 _notifyIcon = new TaskbarIcon();
                 _notifyIcon.Icon = new System.Drawing.Icon("favicon.ico");
-                
+                _notifyIcon.ShowBalloonTip("TodoList", "The application has been minimized to the system tray.", BalloonIcon.Info);
 
             }
-            _notifyIcon.ShowBalloonTip("TodoList", "The application has been minimized to the system tray.", BalloonIcon.Info);
+           
 
         }
         public void ShowWindow()
@@ -107,6 +143,12 @@ namespace TodoList
         //    }
         //}
 
+        private void QuitMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            _notifyIcon.Dispose();
+            Application.Current.Shutdown(); 
+        }
+
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
@@ -117,10 +159,7 @@ namespace TodoList
 
         }
 
-        private void AddTodoButton_clicked(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
 
         private void TimeCalendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -174,9 +213,28 @@ namespace TodoList
                     item.IsDone = !item.IsDone;
                    
                     todoService.UpdateTask(item);
+                    _current = DateOnly.FromDateTime(item.Time);
+                    ToDoDataGrid.ItemsSource = todoService.GetTasksByUserAndTime(User.UserId, _current);
                 }
             }
         }
 
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            var selected = ToDoDataGrid.SelectedItem as Todo;
+            if (selected == null)
+            {
+                MessageBox.Show("Please Select Before Deleting", "Select One", MessageBoxButton.OK, MessageBoxImage.Stop); return;
+            }
+            MessageBoxResult answer = MessageBox.Show("Do you really want to delete ? ", "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (answer == MessageBoxResult.No)
+            {
+                return;
+            }
+
+            //nếu cus bấm yes thì :
+            todoService.RemoveTask(selected);
+            LoadTasks();
+        }
     }
 }
