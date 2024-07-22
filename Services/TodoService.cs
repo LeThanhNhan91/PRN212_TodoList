@@ -78,15 +78,12 @@ namespace Services
 		public void UpdateTask(Todo todo) => _repo.Update(todo);
 		public void RemoveTask(Todo todo) => _repo.Remove(todo);
 
-		public List<Todo> GetTasksByUserAndTime(int userId, DateOnly startDate, DateOnly endDate)
-		{
-			List<Todo> tasks = GetAllTasks()
-                .Where(t => t.UserId == userId
-                            && t.Time >= startDate.ToDateTime(TimeOnly.MinValue)
-                            && t.Time < endDate.AddDays(7).ToDateTime(TimeOnly.MinValue))
-                        .ToList();
+        public List<Todo> GetTasksByUserAndTime(int userId, DateOnly date)
+        {
+            List<Todo> tasks = GetAllTasks().FindAll(t => t.UserId == userId && DateOnly.FromDateTime(t.Time) == date);
 
             return tasks;
-		}
-	}
+        }
+
+    }
 }

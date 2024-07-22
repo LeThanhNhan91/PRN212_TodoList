@@ -8,12 +8,13 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
+using GUI;
 using Hardcodet.Wpf.TaskbarNotification;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic.ApplicationServices;
 using Repositories;
 using Services;
-using Services.Models;
 
 namespace TodoList
 {
@@ -24,10 +25,9 @@ namespace TodoList
     {
         private TaskbarIcon _notifyIcon;
         private TodoService todos = new TodoService();
-        private DateOnly _currentWeekStart = DateOnly.FromDateTime(DateTime.Now);
+        private DateOnly _current = DateOnly.FromDateTime(DateTime.Now);
         private Services.TodoService todoService = new Services.TodoService();
-
-
+        private DispatcherTimer _timer;
 
         public Repositories.User User { get; set; }
         public MainWindow()
@@ -36,14 +36,47 @@ namespace TodoList
             todos = new TodoService();
             DataContext = todos;
             Closing += Window_Closing;
-            GetCurrentWeek();
 
             _notifyIcon = new TaskbarIcon();
             _notifyIcon.Icon = new System.Drawing.Icon("favicon.ico");
             _notifyIcon.ToolTipText = "TodoList Application";
             _notifyIcon.TrayLeftMouseUp += NotifyIcon_TrayLeftMouseUp;
+            _notifyIcon.ContextMenu = (ContextMenu)FindResource("NotifyIconContextMenu");
+
+            //------------- khai bao thông báo giờ gần đến
+            _timer = new DispatcherTimer();
+            _timer.Interval = TimeSpan.FromMinutes(1); 
+            _timer.Tick += Timer_Tick;
+            _timer.Start();
+
         }
 
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            CheckUpcomingTasks();
+        }
+
+        private void CheckUpcomingTasks()
+        {
+            var tasks = todoService.GetTasksByUserAndTime(User.UserId, _current);
+            DateTime now = DateTime.Now;
+
+            foreach (var task in tasks)
+            {
+                DateTime taskTime = task.Time;
+                var minutesUntilTask = (taskTime - now).TotalMinutes;
+
+                if (minutesUntilTask <= 5 && minutesUntilTask > 4)
+                {
+                    _notifyIcon.ShowBalloonTip("Upcoming Task", $"5 minutes left until {task.Title} starts", BalloonIcon.Info);
+                }
+                else if (minutesUntilTask <= 0 && minutesUntilTask >= -1) 
+                {
+                    _notifyIcon.ShowBalloonTip("Task Starting", $"Task {task.Title} is starting now!", BalloonIcon.Info);
+                }
+
+            }
+        }
 
         private void NotifyIcon_TrayLeftMouseUp(object sender, RoutedEventArgs e)
         {
@@ -74,10 +107,10 @@ namespace TodoList
             {
                 _notifyIcon = new TaskbarIcon();
                 _notifyIcon.Icon = new System.Drawing.Icon("favicon.ico");
-                
+                _notifyIcon.ShowBalloonTip("TodoList", "The application has been minimized to the system tray.", BalloonIcon.Info);
 
             }
-            _notifyIcon.ShowBalloonTip("TodoList", "The application has been minimized to the system tray.", BalloonIcon.Info);
+           
 
         }
         public void ShowWindow()
@@ -87,66 +120,33 @@ namespace TodoList
             this.Activate();
         }
 
-        private void GetCurrentWeek()
-        {
-            while (_currentWeekStart.DayOfWeek != DayOfWeek.Monday)
-            {
-                _currentWeekStart = _currentWeekStart.AddDays(-1);
-            }
-        }
-
-        private void UpdateWeekLabel()
-        {
-           
-            var weekEnd = _currentWeekStart.AddDays(6);
-            CurrentWeekLabel.Content = $"{_currentWeekStart:dd/MM/yyyy} - {weekEnd:dd/MM/yyyy}";
-            LoadTasks();
-        }
-
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            UpdateWeekLabel();
             LoadTasks();
         }
         private void LoadTasks()
         {
-            TasksDataGrid.ItemsSource = null;
-            var tasks = todoService.GetAllTasks()
-                        .Where(t => t.UserId == User.UserId
-                            && t.Time >= _currentWeekStart.ToDateTime(TimeOnly.MinValue)
-                            && t.Time < _currentWeekStart.AddDays(7).ToDateTime(TimeOnly.MinValue))
-                        .ToList();
-
-
-            var currentWeekTasks = tasks.GroupBy(t => t.Time.DayOfWeek)
-                                        .ToDictionary(g => g.Key, g => g.Select(t => t.Title).FirstOrDefault());
-
-            var viewModel = new TaskViewModel
-            {
-                Monday = currentWeekTasks.ContainsKey(DayOfWeek.Monday) ? currentWeekTasks[DayOfWeek.Monday] : string.Empty,
-                Tuesday = currentWeekTasks.ContainsKey(DayOfWeek.Tuesday) ? currentWeekTasks[DayOfWeek.Tuesday] : string.Empty,
-                Wednesday = currentWeekTasks.ContainsKey(DayOfWeek.Wednesday) ? currentWeekTasks[DayOfWeek.Wednesday] : string.Empty,
-                Thursday = currentWeekTasks.ContainsKey(DayOfWeek.Thursday) ? currentWeekTasks[DayOfWeek.Thursday] : string.Empty,
-                Friday = currentWeekTasks.ContainsKey(DayOfWeek.Friday) ? currentWeekTasks[DayOfWeek.Friday] : string.Empty,
-                Saturday = currentWeekTasks.ContainsKey(DayOfWeek.Saturday) ? currentWeekTasks[DayOfWeek.Saturday] : string.Empty,
-                Sunday = currentWeekTasks.ContainsKey(DayOfWeek.Sunday) ? currentWeekTasks[DayOfWeek.Sunday] : string.Empty
-            };
-
-            TasksDataGrid.ItemsSource = new List<TaskViewModel> { viewModel };
+            _current = DateOnly.FromDateTime(DateTime.Now);
+            ToDoDataGrid.ItemsSource = todoService.GetTasksByUserAndTime(User.UserId, _current);
         }
+        //private void ToDoDataGrid_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
+        //{
+        //    if (e.Column is DataGridCheckBoxColumn && e.EditAction == DataGridEditAction.Commit)
+        //    {
+        //        var item = e.Row.Item as Todo; 
+        //        if (item != null)
+        //        {
 
-        private void PrevWeekButton_Click(object sender, RoutedEventArgs e)
-        {
-            _currentWeekStart = _currentWeekStart.AddDays(-7);
-            UpdateWeekLabel();
-            LoadTasks();
-        }
+        //            item.IsDone = !item.IsDone;
+        //            todoService.UpdateTask(item);
+        //        }
+        //    }
+        //}
 
-        private void NextWeekButton_Click(object sender, RoutedEventArgs e)
+        private void QuitMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            _currentWeekStart = _currentWeekStart.AddDays(7);
-            UpdateWeekLabel();
-            LoadTasks();
+            _notifyIcon.Dispose();
+            Application.Current.Shutdown(); 
         }
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -159,10 +159,82 @@ namespace TodoList
 
         }
 
-        private void AddTodoButton_clicked(object sender, RoutedEventArgs e)
+        
+
+        private void TimeCalendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
         {
+            DateOnly date = DateOnly.FromDateTime(TimeCalendar.SelectedDate.Value);
+            ToDoDataGrid.ItemsSource = null;
+            ToDoDataGrid.ItemsSource = todoService.GetTasksByUserAndTime(User.UserId, date);
+        }
+
+        
+
+        private void CreateButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            TaskDetailWindow taskDetailWindow = new TaskDetailWindow();
+            taskDetailWindow.User = User;
+            taskDetailWindow.ShowDialog();
+            LoadTasks();
+        }
+
+        private void UpdateButton_Click(object sender, RoutedEventArgs e)
+        {
+            var selected  = ToDoDataGrid.SelectedItem as Todo;
+            
+            if (selected == null)
+            {
+                MessageBox.Show("Please Select Before Updating", "Selected One", MessageBoxButton.OK, MessageBoxImage.Stop);
+                return;
+            }
+            TaskDetailWindow taskDetailWindow = new();
+            taskDetailWindow.Task = selected;
+            taskDetailWindow.User = User;
+            taskDetailWindow.ShowDialog();
+            LoadTasks();
 
         }
 
+        private void ToDoDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+        private void ToDoDataGrid_CurrentCellChanged(object sender, EventArgs e)
+        {
+           
+            if (ToDoDataGrid.CurrentColumn is DataGridCheckBoxColumn)
+            {
+                
+                var item = ToDoDataGrid.CurrentItem as Todo;
+                if (item != null)
+                {
+                    
+                    item.IsDone = !item.IsDone;
+                   
+                    todoService.UpdateTask(item);
+                    _current = DateOnly.FromDateTime(item.Time);
+                    ToDoDataGrid.ItemsSource = todoService.GetTasksByUserAndTime(User.UserId, _current);
+                }
+            }
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            var selected = ToDoDataGrid.SelectedItem as Todo;
+            if (selected == null)
+            {
+                MessageBox.Show("Please Select Before Deleting", "Select One", MessageBoxButton.OK, MessageBoxImage.Stop); return;
+            }
+            MessageBoxResult answer = MessageBox.Show("Do you really want to delete ? ", "Confirm", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (answer == MessageBoxResult.No)
+            {
+                return;
+            }
+
+            //nếu cus bấm yes thì :
+            todoService.RemoveTask(selected);
+            LoadTasks();
+        }
     }
 }

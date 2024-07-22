@@ -1,19 +1,9 @@
 ﻿using Repositories;
 using Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using Services.Validation;
+using System.Windows.Controls;
 
 namespace GUI
 {
@@ -26,25 +16,25 @@ namespace GUI
 
         public User SelectedUser { get; set; }
 
-        private EmailValidation _emailValidation;
+        private UserValidationWrapper _validationWrapper;
 
         public UserDetailWindow(User user = null)
         {
             InitializeComponent();
             SelectedUser = user;
-            _emailValidation = new EmailValidation();
-            DataContext = _emailValidation;
+            _validationWrapper = new UserValidationWrapper();
+            DataContext = _validationWrapper;
 
             if (SelectedUser != null)
             {
-                _emailValidation.Email = SelectedUser.Email;
+                _validationWrapper.EmailValidation.Email = SelectedUser.Email;
+                _validationWrapper.FullNameValidation.FullName = SelectedUser.FullName;
             }
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            //khi validate các text box khác, nhân chỉ cần để namevalidate.HasError vào condition này là được
-            if (_emailValidation.HasError || _emailValidation.Email is null)
+            if (_validationWrapper.EmailValidation.HasError || _validationWrapper.EmailValidation.Email is null || _validationWrapper.FullNameValidation.HasError)
             {
                 return;
             }
@@ -93,8 +83,5 @@ namespace GUI
         {
             this.Close();
         }
-
-        
     }
 }
-

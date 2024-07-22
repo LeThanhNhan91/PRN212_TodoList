@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="Task Detail Window" Height="450" Width="800"
+        Title="Task Detail Window" Height="490" Width="830"
         Background="#BBDEFB" ResizeMode="NoResize"
         >
     <Grid Loaded="Grid_Loaded">
@@ -27,10 +27,10 @@
         <TextBlock HorizontalAlignment="Left" Margin="219,302,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" Width="6" Height="27" IsEnabled="False" FontSize="20                    " Foreground="#31473A"/>
         <Label x:Name="StatusLabel" Content="Status" HorizontalAlignment="Left" Margin="29,360,0,0" VerticalAlignment="Top" Width="102" Height="32" FontSize="17" Foreground="#0D47A1" RenderTransformOrigin="0.528,-0.362" Background="#B6D4F5" FontWeight="Bold"/>
         <ComboBox x:Name="StatusComboBox" HorizontalAlignment="Left" Margin="139,360,0,0" VerticalAlignment="Top" Width="131" Height="32" FontSize="14"/>
-        <Border BorderBrush="#607B8B" BorderThickness="0.8" Height="32" Margin="29,250,669,152"/>
+        <!--<Border BorderBrush="#607B8B" BorderThickness="0.8" Height="32" Margin="29,250,669,152"/>
         <Border BorderBrush="#607B8B" BorderThickness="0.8" Height="32" Margin="29,300,669,102"/>
         <Border BorderBrush="#607B8B" BorderThickness="0.8" Height="32" Margin="29,360,669,42"/>
-        <Border BorderBrush="#607B8B" BorderThickness="0.8" Height="32" Margin="29,79,669,323"/>
-        <Border BorderBrush="#607B8B" BorderThickness="0.8" Height="32" Margin="29,131,669,271"/>
+        <Border BorderBrush="#607B8B" BorderThickness="0.8" Height="32" Margin="14,79,684,363"/>
+        <Border BorderBrush="#607B8B" BorderThickness="0.8" Height="32" Margin="29,131,669,271"/>-->
     </Grid>
 </Window>
