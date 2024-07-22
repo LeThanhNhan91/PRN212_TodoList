@@ -45,11 +45,13 @@ namespace TodoList
 
             //------------- khai bao thông báo giờ gần đến
             _timer = new DispatcherTimer();
-            _timer.Interval = TimeSpan.FromMinutes(1); 
+            _timer.Interval = TimeSpan.FromSeconds(5); 
             _timer.Tick += Timer_Tick;
             _timer.Start();
 
         }
+
+       
 
         private void Timer_Tick(object sender, EventArgs e)
         {
@@ -235,6 +237,14 @@ namespace TodoList
             //nếu cus bấm yes thì :
             todoService.RemoveTask(selected);
             LoadTasks();
+        }
+
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+            string task = BookNameTextBox.Text.ToLower();
+
+            ToDoDataGrid.ItemsSource = null;
+            ToDoDataGrid.ItemsSource = todoService.SearchTaskByTitle(task);
         }
     }
 }

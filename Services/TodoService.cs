@@ -84,6 +84,12 @@ namespace Services
 
             return tasks;
         }
-
+        public List<Todo> SearchTaskByTitle(string name)
+        {
+            name = name.ToLower();
+           
+            
+            return _repo.GetAll().Where(x => x.Title.ToLower().Contains(name)).ToList();
+        }
     }
 }

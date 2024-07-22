@@ -19,10 +19,10 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <Button x:Name="DeleteButton" Content="Delete Todo"  Margin="555,340,95,15" Click="DeleteButton_Click"/>
-        <Button x:Name="UpdateButton" Content="Update Todo" Margin="295,340,400,15" Click="UpdateButton_Click"></Button>
-        <Button x:Name="CreateButton" Content="Create Todo" Margin="74,340,636,15" Click="CreateButton_Click" ></Button>
-        <DataGrid x:Name="ToDoDataGrid" HorizontalAlignment="Left" Height="253" Margin="10,10,0,0" VerticalAlignment="Top" Width="522" AutoGenerateColumns="False" CurrentCellChanged="ToDoDataGrid_CurrentCellChanged" SelectionChanged="ToDoDataGrid_SelectionChanged">
+        <Button x:Name="DeleteButton" Content="Delete Todo"  Margin="624,340,26,15" Click="DeleteButton_Click"/>
+        <Button x:Name="UpdateButton" Content="Update Todo" Margin="325,340,325,15" Click="UpdateButton_Click"></Button>
+        <Button x:Name="CreateButton" Content="Create Todo" Margin="30,340,620,15" Click="CreateButton_Click" ></Button>
+        <DataGrid x:Name="ToDoDataGrid" HorizontalAlignment="Left" Height="253" Margin="30,66,0,0" VerticalAlignment="Top" Width="522" AutoGenerateColumns="False" CurrentCellChanged="ToDoDataGrid_CurrentCellChanged" SelectionChanged="ToDoDataGrid_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Time" Width="150" Binding="{Binding Time}"/>
                 <DataGridTextColumn Header="Title" Width="50" Binding="{Binding Title}"/>
@@ -32,7 +32,10 @@
 
             </DataGrid.Columns>
         </DataGrid>
-        <Calendar x:Name="TimeCalendar" HorizontalAlignment="Left" Height="173" Margin="537,44,0,0" VerticalAlignment="Top" Width="235" SelectedDatesChanged="TimeCalendar_SelectedDatesChanged"/>
+        <Calendar x:Name="TimeCalendar" HorizontalAlignment="Left" Height="173" Margin="555,66,0,0" VerticalAlignment="Top" Width="235" SelectedDatesChanged="TimeCalendar_SelectedDatesChanged"/>
+        <Label Content="Task" HorizontalAlignment="Left" Height="45" Margin="95,21,0,0" VerticalAlignment="Top" Width="107" />
+        <TextBox x:Name="BookNameTextBox" HorizontalAlignment="Left" Height="45" Margin="150,12,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="275" TabIndex="0"/>
+        <Button x:Name="SearchButton" Content="Search" HorizontalAlignment="Left" Height="50" Margin="465,9,0,0" VerticalAlignment="Top" Width="165" TabIndex="2" Click="SearchButton_Click" Grid.Column="0"/>
 
     </Grid>
     <Window.Resources>
