@@ -133,8 +133,8 @@ namespace GUI
 			//----------------------------------------------------------
 			task.Time = date;
 			task.IsDone = status;
-			task.ModifiedDate = DateTime.Now;
-			task.UserId = int.Parse(UserIdLabel.Content.ToString());
+			task.StartTime = PeriodDatePicker.SelectedDate == null ? DateTime.Now : PeriodDatePicker.SelectedDate.Value;
+            task.UserId = int.Parse(UserIdLabel.Content.ToString());
 			if (Task != null)
 			{
 				// Gọi service update
