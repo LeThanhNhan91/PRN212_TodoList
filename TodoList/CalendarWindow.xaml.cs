@@ -23,6 +23,7 @@ namespace GUI
     /// </summary>
     public partial class CalendarWindow : Window
     {
+        private readonly Services.TodoService _todoService = new();
         public User User { get; set; }
         public DateOnly Date { get; set; }
         private TodoService _service = new TodoService();
@@ -67,6 +68,7 @@ namespace GUI
                     var interval = timeIntervals.FirstOrDefault(t => t.Time.Hour == (startHour + i) % 24);
                     if (interval != null)
                     {
+
                         switch (todo.Time.DayOfWeek)
                         {
                             case DayOfWeek.Monday:
@@ -91,6 +93,7 @@ namespace GUI
                                 interval.Sun = todo.Title;
                                 break;
                         }
+
                     }
                 }
             }

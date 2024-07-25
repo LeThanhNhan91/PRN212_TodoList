@@ -96,6 +96,7 @@ namespace GUI
             TaskDetailTitleLabel.Content = title;
         }
 
+
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             Todo task = new Todo();
@@ -135,6 +136,7 @@ namespace GUI
             task.Time = date;
             task.IsDone = status;
             task.ModifiedDate = date2;
+
             task.UserId = int.Parse(UserIdLabel.Content.ToString());
             if (Task != null)
             {
