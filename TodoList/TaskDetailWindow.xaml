@@ -22,14 +22,11 @@
         <DatePicker x:Name="PeriodDatePicker" HorizontalAlignment="Left" Margin="139,250,0,0" VerticalAlignment="Top" Width="165" Height="32" BorderBrush="#333333" FontSize="14"/>
         <Label x:Name="PeriodLabel" Content="Period" HorizontalAlignment="Left" Margin="29,301,0,0" VerticalAlignment="Top" Width="102" Height="32" FontSize="17" Foreground="#0D47A1" RenderTransformOrigin="0.528,-0.362" Background="#B6D4F5" FontWeight="Bold"/>
         <ComboBox x:Name="HourComboBox" HorizontalAlignment="Left" Margin="139,301,0,0" VerticalAlignment="Top" Width="79" Height="32" FontSize="14"/>
-        <ComboBox x:Name="MinuteComboBox" HorizontalAlignment="Left" Margin="225,301,0,0" VerticalAlignment="Top" Width="79" Height="32" FontSize="14"/>
+        <ComboBox x:Name="MinuteComboBox" HorizontalAlignment="Left" Margin="259,301,0,0" VerticalAlignment="Top" Width="79" Height="32" FontSize="14"/>
         <TextBox x:Name="TitleTextBox" HorizontalAlignment="Left" Margin="139,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" Height="32" BorderBrush="#333333" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="219,302,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" Width="6" Height="27" IsEnabled="False" FontSize="20                    " Foreground="#31473A"/>
+        <TextBlock HorizontalAlignment="Left" Margin="230,306,0,0" TextWrapping="Wrap" Text="---" VerticalAlignment="Top" Width="68" Height="27" IsEnabled="False" FontSize="20                    " Foreground="#31473A"/>
         <Label x:Name="StatusLabel" Content="Status" HorizontalAlignment="Left" Margin="29,360,0,0" VerticalAlignment="Top" Width="102" Height="32" FontSize="17" Foreground="#0D47A1" RenderTransformOrigin="0.528,-0.362" Background="#B6D4F5" FontWeight="Bold"/>
         <ComboBox x:Name="StatusComboBox" HorizontalAlignment="Left" Margin="139,360,0,0" VerticalAlignment="Top" Width="131" Height="32" FontSize="14"/>
-        <ComboBox x:Name="HourComboBox_Copy" HorizontalAlignment="Center" Margin="0,306,0,0" VerticalAlignment="Top" Width="78" Height="32" FontSize="14"/>
-        <ComboBox x:Name="MinuteComboBox_Copy" HorizontalAlignment="Left" Margin="469,306,0,0" VerticalAlignment="Top" Width="79" Height="32" FontSize="14" RenderTransformOrigin="3.678,1.038"/>
-        <TextBlock HorizontalAlignment="Left" Margin="459,308,0,0" TextWrapping="Wrap" Text=":" VerticalAlignment="Top" Width="6" Height="28" IsEnabled="False" FontSize="20                    " Foreground="#31473A"/>
         <!--<Border BorderBrush="#607B8B" BorderThickness="0.8" Height="32" Margin="29,250,669,152"/>
         <Border BorderBrush="#607B8B" BorderThickness="0.8" Height="32" Margin="29,300,669,102"/>
         <Border BorderBrush="#607B8B" BorderThickness="0.8" Height="32" Margin="29,360,669,42"/>

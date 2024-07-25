@@ -3352,11 +3352,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\1-7\\PRN212_TodoList\\TodoList\\GUI.csproj",
+      "projectUniqueName": "E:\\2-7\\PRN212_TodoList\\TodoList\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "E:\\1-7\\PRN212_TodoList\\TodoList\\GUI.csproj",
+      "projectPath": "E:\\2-7\\PRN212_TodoList\\TodoList\\GUI.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "E:\\1-7\\PRN212_TodoList\\TodoList\\obj\\",
+      "outputPath": "E:\\2-7\\PRN212_TodoList\\TodoList\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3374,11 +3374,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "E:\\1-7\\PRN212_TodoList\\Repositories\\Repositories.csproj": {
-              "projectPath": "E:\\1-7\\PRN212_TodoList\\Repositories\\Repositories.csproj"
+            "E:\\2-7\\PRN212_TodoList\\Repositories\\Repositories.csproj": {
+              "projectPath": "E:\\2-7\\PRN212_TodoList\\Repositories\\Repositories.csproj"
             },
-            "E:\\1-7\\PRN212_TodoList\\Services\\Services.csproj": {
-              "projectPath": "E:\\1-7\\PRN212_TodoList\\Services\\Services.csproj"
+            "E:\\2-7\\PRN212_TodoList\\Services\\Services.csproj": {
+              "projectPath": "E:\\2-7\\PRN212_TodoList\\Services\\Services.csproj"
             }
           }
         }

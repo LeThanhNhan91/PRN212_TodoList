@@ -22,8 +22,8 @@ namespace TodoList
             ConfigureServices(serviceCollection);
             ServiceProvider = serviceCollection.BuildServiceProvider();
 
-            var loginWindow = ServiceProvider.GetRequiredService<LoginWindow>();
-            loginWindow.Show();
+            //var loginWindow = ServiceProvider.GetRequiredService<LoginWindow>();
+            //loginWindow.Show();
 
         }
 

@@ -21,136 +21,137 @@ namespace GUI
     /// </summary>
     public partial class TaskDetailWindow : Window
     {
-		public User User { get; set; }
-		public Todo Task { get; set; }
-		private TodoService _service = new TodoService();
-		public TaskDetailWindow()
-		{
-			InitializeComponent();
-		}
+        public User User { get; set; }
+        public Todo Task { get; set; }
+        private TodoService _service = new TodoService();
+        public TaskDetailWindow()
+        {
+            InitializeComponent();
+        }
 
 
-		private void TitleTextBox_TextChanged(object sender, TextChangedEventArgs e)
-		{
-			
+        private void TitleTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
-		}
 
-		private void DescriptionTextbox_TextChanged(object sender, TextChangedEventArgs e)
-		{
+        }
 
-		}
+        private void DescriptionTextbox_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
-		private void LoadData()
-		{
-			StatusComboBox.Items.Clear();
-			HourComboBox.Items.Clear();
-			MinuteComboBox.Items.Clear();
-			PeriodDatePicker.SelectedDate = null;
-			NoteIdLabel.Content = "";
+        }
 
-			List<int> hours = new List<int>();
-			List<int> minutes = new List<int>();
-			for (int i = 0; i <= 60; i++)
-			{
-				if (i <= 23)
-					hours.Add(i);
-				minutes.Add(i);
-			}
-			HourComboBox.ItemsSource = hours;
-			MinuteComboBox.ItemsSource = minutes;
-			NoteIdLabel.Visibility = Visibility.Collapsed;
-			UserIdLabel.Content = User.UserId;
-			UserIdLabel.Visibility = Visibility.Collapsed;
-			StatusComboBox.ItemsSource = new List<string>() { "Done", "Not yet" };
-		}
+        private void LoadData()
+        {
+            StatusComboBox.Items.Clear();
+            HourComboBox.Items.Clear();
+            MinuteComboBox.Items.Clear();
+            PeriodDatePicker.SelectedDate = null;
+            NoteIdLabel.Content = "";
 
-		private void Grid_Loaded(object sender, RoutedEventArgs e)
-		{
-			string title = "";
-			DateTime date = DateTime.Now;
-			//----------------------------------
-			LoadData();
-			// Update
-			if (Task != null)
-			{
-				title = "Update task";
-				NoteIdLabel.Content = Task.NoteId;
+            List<int> hours = new List<int>();
+            List<int> minutes = new List<int>();
+            for (int i = 0; i <= 23; i++)
+            {
+                hours.Add(i);
+            }
+            HourComboBox.ItemsSource = hours;
+            MinuteComboBox.ItemsSource = hours;
+            NoteIdLabel.Visibility = Visibility.Collapsed;
+            UserIdLabel.Content = User.UserId;
+            UserIdLabel.Visibility = Visibility.Collapsed;
+            StatusComboBox.ItemsSource = new List<string>() { "Done", "Not yet" };
+        }
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+            string title = "";
+            DateTime date = DateTime.Now;
+            DateTime date2 = DateTime.Now;
+            //----------------------------------
+            LoadData();
+            // Update
+            if (Task != null)
+            {
+                title = "Update task";
+                NoteIdLabel.Content = Task.NoteId;
                 TitleTextBox.Text = Task.Title;
-				DescriptionTextbox.Text = Task.Description;
-				PeriodDatePicker.Text = Task.Time.ToString();
-				date = Task.Time;
-				StatusComboBox.SelectedValue = Task.IsDone == true ? "Done" : "Not yet";
-				NoteIdLabel.Content = Task.NoteId.ToString();
-			}
-			else
-			{
-				title = "Create task";
-				StatusComboBox.IsEnabled = false;
-				
+                DescriptionTextbox.Text = Task.Description;
+                PeriodDatePicker.Text = Task.Time.ToString();
+                date = Task.Time;
+                date2 = Task.ModifiedDate;
+                StatusComboBox.SelectedValue = Task.IsDone == true ? "Done" : "Not yet";
+                NoteIdLabel.Content = Task.NoteId.ToString();
+            }
+            else
+            {
+                title = "Create task";
+                StatusComboBox.IsEnabled = false;
+
 
             }
-			PeriodDatePicker.SelectedDate = date;
-			HourComboBox.SelectedValue = date.Hour;
-			MinuteComboBox.SelectedValue = date.Minute;
-			TaskDetailTitleLabel.Content = title;
-		}
+            PeriodDatePicker.SelectedDate = date;
+            HourComboBox.SelectedValue = date.Hour;
+            MinuteComboBox.SelectedValue = date2.Hour;
+            TaskDetailTitleLabel.Content = title;
+        }
 
-		private void SaveButton_Click(object sender, RoutedEventArgs e)
-		{
-			Todo task = new Todo();
-			int hour = string.IsNullOrEmpty(HourComboBox.SelectedItem.ToString()) ? 0 : int.Parse(HourComboBox.SelectedItem.ToString());
-			int minute = string.IsNullOrEmpty(MinuteComboBox.SelectedItem.ToString()) ? 0 : int.Parse(MinuteComboBox.SelectedItem.ToString());
-			DateTime rawDate = PeriodDatePicker.SelectedDate == null ? DateTime.Now : PeriodDatePicker.SelectedDate.Value;
-			//---------------------------------------------------
-			DateTime date = new DateTime(rawDate.Year, rawDate.Month, rawDate.Day, hour, minute, 00, 0);
-			bool status = false;
-			// Create
-			if (Task == null)
-			{
-				if (string.IsNullOrEmpty(NoteIdLabel.Content.ToString()))
-				{
-					if (string.IsNullOrEmpty(TitleTextBox.Text))
-					{
-						MessageBox.Show("Title can't be empty", "Error Notification", MessageBoxButton.OK, MessageBoxImage.Error);
-						return;
-					}
-					task.Title = TitleTextBox.Text;
-					task.Description = DescriptionTextbox.Text;
-				}
-			}
-			// Update
-			else
-			{
-				if (!string.IsNullOrEmpty(TitleTextBox.Text))
-					task.Title = TitleTextBox.Text;
-				if (!string.IsNullOrEmpty(DescriptionTextbox.Text))
-					task.Description = DescriptionTextbox.Text;
-				if (StatusComboBox.SelectedValue == "Done")
-					status = true;
-				task.NoteId = int.Parse(NoteIdLabel.Content.ToString());
-			}
-			//----------------------------------------------------------
-			task.Time = date;
-			task.IsDone = status;
-			task.ModifiedDate = PeriodDatePicker.SelectedDate == null ? DateTime.Now : PeriodDatePicker.SelectedDate.Value;
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            Todo task = new Todo();
+            int hour = string.IsNullOrEmpty(HourComboBox.SelectedItem.ToString()) ? 0 : int.Parse(HourComboBox.SelectedItem.ToString());
+            int minute = string.IsNullOrEmpty(MinuteComboBox.SelectedItem.ToString()) ? 0 : int.Parse(MinuteComboBox.SelectedItem.ToString());
+            DateTime rawDate = PeriodDatePicker.SelectedDate == null ? DateTime.Now : PeriodDatePicker.SelectedDate.Value;
+            //---------------------------------------------------
+            DateTime date = new DateTime(rawDate.Year, rawDate.Month, rawDate.Day, hour, 00, 00, 0);
+            DateTime date2 = new DateTime(rawDate.Year, rawDate.Month, rawDate.Day, minute, 00, 00, 0);
+            bool status = false;
+            // Create
+            if (Task == null)
+            {
+                if (string.IsNullOrEmpty(NoteIdLabel.Content.ToString()))
+                {
+                    if (string.IsNullOrEmpty(TitleTextBox.Text))
+                    {
+                        MessageBox.Show("Title can't be empty", "Error Notification", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+                    task.Title = TitleTextBox.Text;
+                    task.Description = DescriptionTextbox.Text;
+                }
+            }
+            // Update
+            else
+            {
+                if (!string.IsNullOrEmpty(TitleTextBox.Text))
+                    task.Title = TitleTextBox.Text;
+                if (!string.IsNullOrEmpty(DescriptionTextbox.Text))
+                    task.Description = DescriptionTextbox.Text;
+                if (StatusComboBox.SelectedValue == "Done")
+                    status = true;
+                task.NoteId = int.Parse(NoteIdLabel.Content.ToString());
+            }
+            //----------------------------------------------------------
+            task.Time = date;
+            task.IsDone = status;
+            task.ModifiedDate = date2;
             task.UserId = int.Parse(UserIdLabel.Content.ToString());
-			if (Task != null)
-			{
-				// Gọi service update
-				_service.UpdateTask(task);
-			}
-			else
-			{
-				// Gọi service add
-				_service.AddTask(task);
-			}
-			this.Close();
-		}
+            if (Task != null)
+            {
+                // Gọi service update
+                _service.UpdateTask(task);
+            }
+            else
+            {
+                // Gọi service add
+                _service.AddTask(task);
+            }
+            this.Close();
+        }
 
-		private void BackButton_Click(object sender, RoutedEventArgs e)
-		{
-			this.Close();
-		}
-	}
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+    }
 }
