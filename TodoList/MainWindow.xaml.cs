@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Configuration;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -15,7 +16,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic.ApplicationServices;
 using Repositories;
 using Services;
-using Services.Interface;
+using System.Windows.Documents;
+using System.Windows.Controls;
+using System.Printing;
+using StackExchange.Redis;
+
+
+using Microsoft.Extensions.Configuration;
+
 
 namespace TodoList
 {
@@ -24,20 +32,36 @@ namespace TodoList
     /// </summary>
     public partial class MainWindow : Window
     {
+        private DateOnly _selectedDate;
+
         private TaskbarIcon _notifyIcon;
         private TodoService todos = new TodoService();
         private DateOnly _current = DateOnly.FromDateTime(DateTime.Now);
         private Services.TodoService todoService = new Services.TodoService();
         private DispatcherTimer _timer;
+        private readonly IConnectionMultiplexer _redis;
 
         public Repositories.User User { get; set; }
         public MainWindow()
         {
             InitializeComponent();
             todos = new TodoService();
+            
+            var configuration = new ConfigurationBuilder()
+           .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+           .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+           .Build();
+
+            _redis = ConnectionMultiplexer.Connect(configuration. GetConnectionString("RedisConnection"));
             DataContext = todos;
             Closing += Window_Closing;
+            InitializeNotification();
+            SubscribeToRedis();
 
+        }
+
+        private void InitializeNotification()
+        {
             _notifyIcon = new TaskbarIcon();
             _notifyIcon.Icon = new System.Drawing.Icon("favicon.ico");
             _notifyIcon.ToolTipText = "TodoList Application";
@@ -46,13 +70,23 @@ namespace TodoList
 
             //------------- khai bao thông báo giờ gần đến
             _timer = new DispatcherTimer();
-            _timer.Interval = TimeSpan.FromSeconds(5); 
+            _timer.Interval = TimeSpan.FromSeconds(5);
             _timer.Tick += Timer_Tick;
             _timer.Start();
-
         }
 
-       
+        private void SubscribeToRedis()
+        {
+            var subscriber = _redis.GetSubscriber();
+            subscriber.Subscribe("task_channel", (channel, message) =>
+            {
+                Dispatcher.Invoke(() =>
+                {
+                    MessageBox.Show(message, "Notification", MessageBoxButton.OK, MessageBoxImage.Information);
+                    LoadTasks();
+                });
+            });
+        }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
@@ -171,9 +205,9 @@ namespace TodoList
 
         private void TimeCalendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
         {
-            DateOnly date = DateOnly.FromDateTime(TimeCalendar.SelectedDate.Value);
+           _selectedDate = DateOnly.FromDateTime(TimeCalendar.SelectedDate.Value);
             ToDoDataGrid.ItemsSource = null;
-            ToDoDataGrid.ItemsSource = todoService.GetTasksByUserAndTime(User.UserId, date);
+            ToDoDataGrid.ItemsSource = todoService.GetTasksByUserAndTime(User.UserId, _selectedDate);
         }
 
         
@@ -267,5 +301,65 @@ namespace TodoList
             shareTaskWindow.ShowDialog();
         }
 
+        private void PrintButton_Click(object sender, RoutedEventArgs e)
+        {
+            PrintTasksOfSelectedDay();
+        }
+        private void PrintTasksOfSelectedDay()
+        {
+            if (User == null)
+            {
+                MessageBox.Show("User is not logged in!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            var tasks = todoService.GetTasksByUserAndTime(User.UserId, _selectedDate);
+            if (tasks == null || !tasks.Any())
+            {
+                MessageBox.Show("No tasks for the selected day!", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+                return;
+            }
+
+            // Create a FlowDocument for printing
+            FlowDocument doc = new FlowDocument();
+            doc.PagePadding = new Thickness(50);
+            doc.ColumnWidth = double.PositiveInfinity;
+
+            // Add a title
+            Paragraph title = new Paragraph(new Run($"Tasks for {_selectedDate.ToString("D")}"));
+            title.FontSize = 20;
+            title.TextAlignment = TextAlignment.Center;
+            doc.Blocks.Add(title);
+
+            // Add tasks
+            foreach (var task in tasks)
+            {
+                var paragraph = new Paragraph();
+                paragraph.Inlines.Add(new Bold(new Run(task.Title)));
+                paragraph.Inlines.Add(new LineBreak());
+                paragraph.Inlines.Add(new Run(task.Description));
+                paragraph.Inlines.Add(new LineBreak());
+                paragraph.Inlines.Add(new Run(task.Time.ToString("g")));
+                paragraph.Margin = new Thickness(0, 0, 0, 20);
+                doc.Blocks.Add(paragraph);
+            }
+
+            // Create a PrintDialog and print the document
+            PrintDialog printDialog = new PrintDialog();
+            if (printDialog.ShowDialog() == true)
+            {
+                try
+                {
+                    IDocumentPaginatorSource idpSource = doc;
+                    printDialog.PrintDocument(idpSource.DocumentPaginator, "Tasks of the Selected Day");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Printing error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+        }
+
+
     }
-    }
+}

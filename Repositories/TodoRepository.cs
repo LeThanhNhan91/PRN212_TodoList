@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+ 
 
 namespace Repositories
 {
 	public class TodoRepository
 	{
 		private TodoDbContext _context;
-		public TodoRepository()
+       
+        public TodoRepository()
 		{
 			_context = new TodoDbContext();
 		}
@@ -19,12 +21,18 @@ namespace Repositories
 			_context = new TodoDbContext();
 			return _context.Todos.ToList();
 		}
+        public Todo GetById(int id)
+        {
+            _context = new TodoDbContext();
+            return _context.Todos.Where(m => m.NoteId == id).FirstOrDefault();
+        }
 
-		public void Add(Todo todo)
+        public void Add(Todo todo)
 		{
 			_context = new TodoDbContext();
 			_context.Todos.Add(todo);
 			_context.SaveChanges();
+
 		}
 		public void Update(Todo todo)
 		{
@@ -47,7 +55,10 @@ namespace Repositories
             };
 
             _context.SharedTasks.Add(sharedTask);
+			
+			_context.Todos.Add(_context.Todos.Find(todoId));
             _context.SaveChanges();
+            
         }
     }
 }

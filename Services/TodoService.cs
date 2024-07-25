@@ -11,7 +11,8 @@ namespace Services
 
 		private ObservableCollection<Todo> _allTodos = new();
 		private TodoRepository _repo = new TodoRepository();
-		private string FileToDo
+        private readonly RedisService _redisPublisher;
+        private string FileToDo
 		{
 			get
 			{
@@ -75,7 +76,11 @@ namespace Services
 		}
 
 		public List<Todo> GetAllTasks() => _repo.GetAll();
-		public void AddTask(Todo todo) => _repo.Add(todo);
+		public void AddTask(Todo todo)
+		{
+			_repo.Add(todo);
+            
+		 }
 		public void UpdateTask(Todo todo) => _repo.Update(todo);
 		public void RemoveTask(Todo todo) => _repo.Remove(todo);
 
@@ -93,6 +98,23 @@ namespace Services
             return _repo.GetAll().Where(x => x.Title.ToLower().Contains(name)).ToList();
         }
 
-        public void ShareTask(int todoId, int userId) => _repo.ShareTask(todoId, userId);
+		public void ShareTask(int todoId, int userId) {
+			_repo.ShareTask(todoId, userId);
+
+			var todo = _repo.GetById(todoId);
+			var todoNew = new Todo()
+			{
+				UserId = userId,
+				Title = todo.Title,
+				Description = todo.Description,
+				ModifiedDate = todo.ModifiedDate,
+				Time = todo.Time,
+				IsDone = todo.IsDone
+			};
+			
+			_repo.Add(todoNew);
+            _redisPublisher.PublishMessageAsync("task_channel", $"New todo added: {todo.Title}").Wait();
+        }
+
     }
 }
