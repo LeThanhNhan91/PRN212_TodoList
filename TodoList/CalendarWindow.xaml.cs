@@ -184,7 +184,10 @@ namespace GUI
             TodoListView.ItemsSource = timeIntervals;
         }
 
-
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }
 
