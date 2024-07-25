@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="CalendarWindow" 
         ResizeMode="NoResize" Height="1000" Width="1800"
-        Background="Black"
+        Background="#BBDEFB"
         >
     <Grid x:Name="CalendarWindow1" Loaded="CalendarWindow1_Loaded">
-        <Calendar HorizontalAlignment="Left" Height="166" Margin="30,151,0,0" VerticalAlignment="Top" Width="202"/>
+        <Calendar x:Name="CalendarPick" HorizontalAlignment="Left" Height="166" Margin="30,151,0,0" VerticalAlignment="Top" Width="202" SelectedDatesChanged="CalendarPick_SelectedDatesChanged"/>
         <DataGrid x:Name="TodoListView" HorizontalAlignment="Left" Height="820" Margin="280,154,0,0" VerticalAlignment="Top" Width="1510" AutoGenerateColumns="False"
-          Background="#FF3E3E3E" Foreground="White">
+          Background="White" Foreground="White">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Time" Width="*" Binding="{Binding Time, StringFormat='HH:mm'}"/>
                 <DataGridTextColumn Header="Mon" Width="*" Binding="{Binding Mon}"/>
@@ -40,16 +40,17 @@
         </DataGrid>
 
         <Grid HorizontalAlignment="Center" Height="75" Margin="0,10,0,0" VerticalAlignment="Top" Width="1780">
-            <Label x:Name="AcccountNameLabel" Content="Label" HorizontalAlignment="Left" Height="36" Margin="1318,0,0,0" VerticalAlignment="Top" Width="260"/>
-            <Button x:Name="ExitButton" Content="Exit" HorizontalAlignment="Left" Height="26" Margin="1583,10,0,0" VerticalAlignment="Top" Width="187"/>
+            <Label x:Name="AcccountNameLabel" Content="" HorizontalAlignment="Left" Height="36" Margin="1003,0,0,0" VerticalAlignment="Top" Width="575"/>
+            <Button x:Name="ExitButton" Content="Exit" HorizontalAlignment="Left" Height="26" Margin="1583,10,0,0" VerticalAlignment="Top" Width="187" Click="ExitButton_Click"/>
             <Label x:Name="TodoLabel" Content="To-do WPF" HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="193" Foreground="#FF479EF5" FontSize="30" FontWeight="ExtraBlack"/>
-            <TextBox x:Name="SearchTextBox" HorizontalAlignment="Left" Height="38" Margin="641,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="443" Background="#FFD6D6D6"/>
-            <Label x:Name="SearchLabel" Content="Search" HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="130" Foreground="White" FontSize="30" FontWeight="ExtraBlack" Margin="511,-1,0,0"/>
         </Grid>
         <Grid x:Name="DateGrid" HorizontalAlignment="Center" Height="60" Margin="0,86,0,0" VerticalAlignment="Top" Width="1780">
-            <Button x:Name="TodayButton" Content="Today" HorizontalAlignment="Left" Height="50" Margin="274,10,0,0" VerticalAlignment="Top" Width="167"/>
-            <Label x:Name="DateLabel" Content="July 21-27, 2024" HorizontalAlignment="Left" Height="52" Margin="890,2,0,0" VerticalAlignment="Top" Width="287" Foreground="White" FontSize="30" VerticalContentAlignment="Center"/>
-            <Button x:Name="ViewTodayButton" Content="View today Tasks" HorizontalAlignment="Left" Height="50" Margin="1603,0,0,0" VerticalAlignment="Center" Width="167" Click="ViewTodayButton_Click"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="201*"/>
+                <ColumnDefinition Width="244*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="DateLabel" Content="July 21-27, 2024" HorizontalAlignment="Left" Height="52" Margin="34,2,0,0" VerticalAlignment="Top" Width="515" Foreground="Black" FontSize="30" VerticalContentAlignment="Center" Grid.Column="1"/>
+            <Button x:Name="ViewTodayButton" Content="View today Tasks" HorizontalAlignment="Left" Height="50" Margin="335,-2,0,0" VerticalAlignment="Top" Width="167" Click="ViewTodayButton_Click"/>
         </Grid>
 
     </Grid>
