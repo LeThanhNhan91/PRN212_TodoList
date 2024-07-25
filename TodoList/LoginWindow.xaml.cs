@@ -54,7 +54,7 @@ namespace GUI
 						admin.ShowDialog();
 						break;
 					case 1:
-						MainWindow customer = new MainWindow();
+                        CalendarWindow customer = new CalendarWindow();
 						customer.User = user;
 						customer.ShowDialog();
 						break;
