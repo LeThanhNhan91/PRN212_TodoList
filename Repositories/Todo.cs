@@ -20,7 +20,7 @@ namespace Repositories
         public string Description { get; set; }
 
         [Required]
-        public DateTime StartTime { get; set; }
+        public DateTime ModifiedDate { get; set; }
 
         [Required]
         public DateTime Time { get; set; }
