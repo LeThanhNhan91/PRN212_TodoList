@@ -30,5 +30,6 @@ namespace Repositories
 
 
         public virtual ICollection<Todo> Todos { get; set; } = new List<Todo>();
+        public virtual ICollection<SharedTask> SharedTasks { get; set; } = new List<SharedTask>();
     }
 }

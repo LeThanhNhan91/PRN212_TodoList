@@ -31,5 +31,6 @@ namespace Repositories
 
 
         public virtual User User { get; set; } = null!;
+        public virtual ICollection<SharedTask> SharedTasks { get; set; } = new List<SharedTask>();
     }
 }

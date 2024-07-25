@@ -9,6 +9,10 @@ namespace Repositories
 	public class TodoRepository
 	{
 		private TodoDbContext _context;
+		public TodoRepository()
+		{
+			_context = new TodoDbContext();
+		}
 
 		public List<Todo> GetAll()
 		{
@@ -34,6 +38,16 @@ namespace Repositories
 			_context.Remove(todo);
 			_context.SaveChanges();
 		}
+        public void ShareTask(int todoId, int userId)
+        {
+            var sharedTask = new SharedTask
+            {
+                TodoId = todoId,
+                UserId = userId
+            };
 
-	}
+            _context.SharedTasks.Add(sharedTask);
+            _context.SaveChanges();
+        }
+    }
 }

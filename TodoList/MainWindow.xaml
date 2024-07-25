@@ -36,6 +36,7 @@
         <Label Content="Task" HorizontalAlignment="Left" Height="45" Margin="95,21,0,0" VerticalAlignment="Top" Width="107" />
         <TextBox x:Name="BookNameTextBox" HorizontalAlignment="Left" Height="45" Margin="150,12,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="275" TabIndex="0"/>
         <Button x:Name="SearchButton" Content="Search" HorizontalAlignment="Left" Height="50" Margin="465,9,0,0" VerticalAlignment="Top" Width="165" TabIndex="2" Click="SearchButton_Click" Grid.Column="0"/>
+        <Button x:Name="ShareButton" Content="Share Todo" Margin="634,266,36,115" Click="ShareButton_Click"/>
 
     </Grid>
     <Window.Resources>

@@ -2,11 +2,12 @@
 using System.ComponentModel;
 using System.Text.Json;
 using Repositories;
+using Services.Interface;
 
 namespace Services
 {
-	public class TodoService
-	{
+	public class TodoService : ITodoService
+    {
 
 		private ObservableCollection<Todo> _allTodos = new();
 		private TodoRepository _repo = new TodoRepository();
@@ -91,5 +92,7 @@ namespace Services
             
             return _repo.GetAll().Where(x => x.Title.ToLower().Contains(name)).ToList();
         }
+
+        public void ShareTask(int todoId, int userId) => _repo.ShareTask(todoId, userId);
     }
 }

@@ -15,6 +15,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic.ApplicationServices;
 using Repositories;
 using Services;
+using Services.Interface;
 
 namespace TodoList
 {
@@ -128,6 +129,11 @@ namespace TodoList
         }
         private void LoadTasks()
         {
+            if (User == null)
+            {
+                MessageBox.Show("User is not logged in!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             _current = DateOnly.FromDateTime(DateTime.Now);
             ToDoDataGrid.ItemsSource = todoService.GetTasksByUserAndTime(User.UserId, _current);
         }
@@ -246,5 +252,20 @@ namespace TodoList
             ToDoDataGrid.ItemsSource = null;
             ToDoDataGrid.ItemsSource = todoService.SearchTaskByTitle(task);
         }
+
+        private void ShareButton_Click(object sender, RoutedEventArgs e)
+        {
+            var selected = ToDoDataGrid.SelectedItem as Todo;
+            if (selected == null)
+            {
+                MessageBox.Show("Please Select a Task to Share", "Select One", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            // Open a new window to select the user to share the task with
+            ShareTaskWindow shareTaskWindow = new ShareTaskWindow( selected.NoteId);
+            shareTaskWindow.ShowDialog();
+        }
+
     }
-}
+    }
