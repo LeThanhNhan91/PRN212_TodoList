@@ -12,7 +12,7 @@
     <Grid x:Name="CalendarWindow1" Loaded="CalendarWindow1_Loaded">
         <Calendar x:Name="CalendarPick" HorizontalAlignment="Left" Height="166" Margin="30,151,0,0" VerticalAlignment="Top" Width="202" SelectedDatesChanged="CalendarPick_SelectedDatesChanged"/>
         <DataGrid x:Name="TodoListView" HorizontalAlignment="Left" Height="820" Margin="280,154,0,0" VerticalAlignment="Top" Width="1510" AutoGenerateColumns="False"
-          Background="White" Foreground="White">
+          Background="White" Foreground="White" AlternatingRowBackground="Gray" AlternationCount="2">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Time" Width="*" Binding="{Binding Time, StringFormat='HH:mm'}"/>
                 <DataGridTextColumn Header="Mon" Width="*" Binding="{Binding Mon}"/>
@@ -26,18 +26,26 @@
             <DataGrid.Resources>
                 <!-- Style for DataGridRow -->
                 <Style TargetType="DataGridRow">
-                    <Setter Property="Background" Value="Black"/>
-                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Foreground" Value="Black"/>
                     <Setter Property="Height" Value="30"/>
-                    <!-- Default height for each hour -->
+                    <Style.Triggers>
+                        <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                            <Setter Property="Background" Value="White"/>
+                        </Trigger>
+                        <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                            <Setter Property="Background" Value="#FFFDFDFD"/>
+                        </Trigger>
+                    </Style.Triggers>
                 </Style>
                 <!-- Style for DataGridColumnHeader -->
                 <Style TargetType="DataGridColumnHeader">
-                    <Setter Property="Background" Value="Black"/>
-                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Background" Value="White"/>
+                    <Setter Property="Foreground" Value="Black"/>
                 </Style>
             </DataGrid.Resources>
         </DataGrid>
+
+
 
         <Grid HorizontalAlignment="Center" Height="75" Margin="0,10,0,0" VerticalAlignment="Top" Width="1780">
             <Label x:Name="AcccountNameLabel" Content="" HorizontalAlignment="Left" Height="36" Margin="1003,0,0,0" VerticalAlignment="Top" Width="575"/>
@@ -49,7 +57,7 @@
                 <ColumnDefinition Width="201*"/>
                 <ColumnDefinition Width="244*"/>
             </Grid.ColumnDefinitions>
-            <Label x:Name="DateLabel" Content="July 21-27, 2024" HorizontalAlignment="Left" Height="52" Margin="34,2,0,0" VerticalAlignment="Top" Width="515" Foreground="Black" FontSize="30" VerticalContentAlignment="Center" Grid.Column="1"/>
+            <Label x:Name="DateLabel" Content="July 21-27, 2024" HorizontalAlignment="Left" Height="52" Margin="746,0,0,0" VerticalAlignment="Top" Width="793" Foreground="Black" FontSize="30" VerticalContentAlignment="Center" Grid.ColumnSpan="2"/>
             <Button x:Name="ViewTodayButton" Content="View today Tasks" HorizontalAlignment="Left" Height="50" Margin="335,-2,0,0" VerticalAlignment="Top" Width="167" Click="ViewTodayButton_Click"/>
         </Grid>
 

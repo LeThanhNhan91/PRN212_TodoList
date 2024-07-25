@@ -56,7 +56,7 @@ namespace Repositories
 
             _context.SharedTasks.Add(sharedTask);
 			
-			_context.Todos.Add(_context.Todos.Find(todoId));
+		
             _context.SaveChanges();
             
         }

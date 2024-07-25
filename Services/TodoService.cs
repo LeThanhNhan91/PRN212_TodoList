@@ -1,8 +1,10 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Text.Json;
+using Microsoft.Extensions.Configuration;
 using Repositories;
 using Services.Interface;
+using StackExchange.Redis;
 
 namespace Services
 {
@@ -11,6 +13,7 @@ namespace Services
 
 		private ObservableCollection<Todo> _allTodos = new();
 		private TodoRepository _repo = new TodoRepository();
+      
         private readonly RedisService _redisPublisher;
         private string FileToDo
 		{
@@ -23,11 +26,23 @@ namespace Services
 		public TodoService()
 		{
 			LoadToDo();
-		}
+			_redisPublisher = InitializeRedisService();
+
+        }
+        private RedisService InitializeRedisService()
+        {
+            var configuration = new ConfigurationBuilder()
+                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .Build();
+
+            var redis = ConnectionMultiplexer.Connect(configuration.GetConnectionString("RedisConnection"));
+            return new RedisService(redis);
+        }
 
 
 
-		public void LoadToDo()
+        public void LoadToDo()
 		{
 			if (!File.Exists(FileToDo))
 			{
