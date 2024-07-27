@@ -253,6 +253,7 @@ namespace GUI
             Application.Current.Shutdown();
         }
 
+
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             e.Cancel = true;
@@ -265,6 +266,13 @@ namespace GUI
 
             }
             _notifyIcon.ShowBalloonTip("TodoList", "The application has been minimized to the system tray.", BalloonIcon.Info);
+
+		private void NotificationButton_Click(object sender, RoutedEventArgs e)
+		{
+            NotificationWindow notificationWindow = new NotificationWindow();
+            notificationWindow.User = User;
+            notificationWindow.Show();
+
         }
     }
 }

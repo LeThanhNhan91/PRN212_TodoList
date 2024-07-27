@@ -1,21 +1,16 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Text.Json;
-using Microsoft.Extensions.Configuration;
 using Repositories;
-using Services.Interface;
-using StackExchange.Redis;
 
 namespace Services
 {
-	public class TodoService : ITodoService
-    {
+	public class TodoService
+	{
 
 		private ObservableCollection<Todo> _allTodos = new();
 		private TodoRepository _repo = new TodoRepository();
-      
-        private readonly RedisService _redisPublisher;
-        private string FileToDo
+		private string FileToDo
 		{
 			get
 			{
@@ -26,23 +21,11 @@ namespace Services
 		public TodoService()
 		{
 			LoadToDo();
-			_redisPublisher = InitializeRedisService();
-
-        }
-        private RedisService InitializeRedisService()
-        {
-            var configuration = new ConfigurationBuilder()
-                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                .Build();
-
-            var redis = ConnectionMultiplexer.Connect(configuration.GetConnectionString("RedisConnection"));
-            return new RedisService(redis);
-        }
+		}
 
 
 
-        public void LoadToDo()
+		public void LoadToDo()
 		{
 			if (!File.Exists(FileToDo))
 			{
@@ -91,45 +74,18 @@ namespace Services
 		}
 
 		public List<Todo> GetAllTasks() => _repo.GetAll();
-		public void AddTask(Todo todo)
-		{
-			_repo.Add(todo);
-            
-		 }
+		public void AddTask(Todo todo) => _repo.Add(todo);
 		public void UpdateTask(Todo todo) => _repo.Update(todo);
 		public void RemoveTask(Todo todo) => _repo.Remove(todo);
 
-        public List<Todo> GetTasksByUserAndTime(int userId, DateOnly date)
-        {
-            List<Todo> tasks = GetAllTasks().FindAll(t => t.UserId == userId && DateOnly.FromDateTime(t.Time) == date);
+		public Todo GetRecentAddedTaskOfUser(int userId) => GetAllTasks().Where(x => x.UserId == userId).OrderByDescending(x => x.NoteId).FirstOrDefault();
 
-            return tasks;
-        }
-        public List<Todo> SearchTaskByTitle(string name)
-        {
-            name = name.ToLower();
-           
-            
-            return _repo.GetAll().Where(x => x.Title.ToLower().Contains(name)).ToList();
-        }
+		public List<Todo> GetTasksByUserAndTime(int userId, DateOnly date)
+		{
+			List<Todo> tasks = GetAllTasks().FindAll(t => t.UserId == userId && DateOnly.FromDateTime(t.Time) == date);
 
-		public void ShareTask(int todoId, int userId) {
-			_repo.ShareTask(todoId, userId);
+			return tasks;
+		}
 
-			var todo = _repo.GetById(todoId);
-			var todoNew = new Todo()
-			{
-				UserId = userId,
-				Title = todo.Title,
-				Description = todo.Description,
-				ModifiedDate = todo.ModifiedDate,
-				Time = todo.Time,
-				IsDone = todo.IsDone
-			};
-			
-			_repo.Add(todoNew);
-            _redisPublisher.PublishMessageAsync("task_channel", $"New todo added: {todo.Title}").Wait();
-        }
-
-    }
+	}
 }
