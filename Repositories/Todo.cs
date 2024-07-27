@@ -28,9 +28,13 @@ namespace Repositories
         [Required]
         public bool IsDone { get; set; }
 
+        [Required]
+        public bool IsHost {  get; set; }
+
 
 
         public virtual User User { get; set; } = null!;
         public virtual ICollection<SharedTask> SharedTasks { get; set; } = new List<SharedTask>();
     }
 }
+    

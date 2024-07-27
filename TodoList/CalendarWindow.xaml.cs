@@ -191,6 +191,13 @@ namespace GUI
         {
             Application.Current.Shutdown();
         }
+
+		private void NotificationButton_Click(object sender, RoutedEventArgs e)
+		{
+            NotificationWindow notificationWindow = new NotificationWindow();
+            notificationWindow.User = User;
+            notificationWindow.Show();
+        }
     }
 }
 

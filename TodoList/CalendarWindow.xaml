@@ -54,12 +54,19 @@
         </Grid>
         <Grid x:Name="DateGrid" HorizontalAlignment="Center" Height="60" Margin="0,86,0,0" VerticalAlignment="Top" Width="1780">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="201*"/>
-                <ColumnDefinition Width="244*"/>
+                <ColumnDefinition Width="804*"/>
+                <ColumnDefinition Width="769*"/>
+                <ColumnDefinition Width="207*"/>
             </Grid.ColumnDefinitions>
             <Label x:Name="DateLabel" Content="July 21-27, 2024" HorizontalAlignment="Left" Height="52" Margin="746,0,0,0" VerticalAlignment="Top" Width="793" Foreground="Black" FontSize="30" VerticalContentAlignment="Center" Grid.ColumnSpan="2"/>
-            <Button x:Name="ViewTodayButton" Content="View today Tasks" HorizontalAlignment="Left" Height="50" Margin="335,-2,0,0" VerticalAlignment="Top" Width="167" Click="ViewTodayButton_Click"/>
+            <Button x:Name="ViewTodayButton" Content="View today tasks" HorizontalAlignment="Left" Height="50" Margin="335,-2,0,0" VerticalAlignment="Top" Width="167" Click="ViewTodayButton_Click"/>
+            <Button x:Name="NotificationButton" Grid.Column="2" HorizontalAlignment="Left" Margin="22,0,0,0" VerticalAlignment="Center" Click="NotificationButton_Click" Background="#BBDEFB" BorderBrush="#BBDEFB">
+                <Button.Content>
+                    <Image Source="notificationv2.png" Width="50" Height="50"/>
+                </Button.Content>
+            </Button>
         </Grid>
+      
 
     </Grid>
 </Window>

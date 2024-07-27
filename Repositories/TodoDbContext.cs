@@ -35,6 +35,7 @@ namespace Repositories
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Todo> Todos { get; set; }
         public virtual DbSet<SharedTask> SharedTasks { get; set; }
+        public virtual DbSet<InvitationNotification> InvitationNotifications { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

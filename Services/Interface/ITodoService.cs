@@ -23,5 +23,7 @@ namespace Services.Interface
         List<Todo> GetTasksByUserAndTime(int userId, DateOnly date);
         List<Todo> SearchTaskByTitle(string name);
         void ShareTask(int todoId, int userId);
+
+
     }
 }
