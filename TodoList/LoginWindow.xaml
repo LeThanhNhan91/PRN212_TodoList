@@ -18,7 +18,7 @@
         <Label Content="LOG IN" HorizontalAlignment="Center" Height="62" Margin="0,16,0,0" VerticalAlignment="Top" Width="482"
                FontSize="30" FontWeight="Bold" 
                VerticalContentAlignment="Center"
-               HorizontalContentAlignment="Center"
+               HorizontalContentAlignment="Center" 
                />
         <Label Content="Email" HorizontalAlignment="Left" Height="34" Margin="180,156,0,0" VerticalAlignment="Top" Width="98"
                VerticalContentAlignment="Center"

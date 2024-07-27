@@ -51,12 +51,17 @@ namespace GUI
 
             List<int> hours = new List<int>();
             List<int> minutes = new List<int>();
-            for (int i = 0; i <= 23; i++)
+            for (int i = 0; i <= 60; i++)
             {
+                if (i <= 24)
+                {
                 hours.Add(i);
+                    
+                }
+                minutes.Add(i);
             }
             HourComboBox.ItemsSource = hours;
-            MinuteComboBox.ItemsSource = hours;
+            MinuteComboBox.ItemsSource = minutes;
             NoteIdLabel.Visibility = Visibility.Collapsed;
             UserIdLabel.Content = User.UserId;
             UserIdLabel.Visibility = Visibility.Collapsed;
@@ -104,8 +109,8 @@ namespace GUI
             int minute = string.IsNullOrEmpty(MinuteComboBox.SelectedItem.ToString()) ? 0 : int.Parse(MinuteComboBox.SelectedItem.ToString());
             DateTime rawDate = PeriodDatePicker.SelectedDate == null ? DateTime.Now : PeriodDatePicker.SelectedDate.Value;
             //---------------------------------------------------
-            DateTime date = new DateTime(rawDate.Year, rawDate.Month, rawDate.Day, hour, 00, 00, 0);
-            DateTime date2 = new DateTime(rawDate.Year, rawDate.Month, rawDate.Day, minute, 00, 00, 0);
+            DateTime date = new DateTime(rawDate.Year, rawDate.Month, rawDate.Day, hour, minute, 00, 0);
+           //DateTime date2 = new DateTime(rawDate.Year, rawDate.Month, rawDate.Day, minute, 00, 00, 0);
             bool status = false;
             // Create
             if (Task == null)
@@ -135,7 +140,7 @@ namespace GUI
             //----------------------------------------------------------
             task.Time = date;
             task.IsDone = status;
-            task.ModifiedDate = date2;
+            task.ModifiedDate = date;
 
             task.UserId = int.Parse(UserIdLabel.Content.ToString());
             if (Task != null)

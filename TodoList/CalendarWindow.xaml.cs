@@ -1,4 +1,5 @@
-﻿using Repositories;
+﻿using Hardcodet.Wpf.TaskbarNotification;
+using Repositories;
 using Services;
 using Services.Models;
 using System;
@@ -8,13 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+
+using System.Windows.Threading;
+
+using Microsoft.VisualBasic.ApplicationServices;
+
 using TodoList;
+using Services.Interface;
 
 namespace GUI
 {
@@ -24,13 +25,18 @@ namespace GUI
     public partial class CalendarWindow : Window
     {
         private readonly Services.TodoService _todoService = new();
-        public User User { get; set; }
+        private TaskbarIcon _notifyIcon;
+        private DispatcherTimer _timer;
+        private DateOnly _current = DateOnly.FromDateTime(DateTime.Now);
+        public Repositories.User User { get; set; }
         public DateOnly Date { get; set; }
         private TodoService _service = new TodoService();
 
         public CalendarWindow()
         {
             InitializeComponent();
+            Closing += Window_Closing;
+            InitializeNotification();
         }
 
         private void CalendarWindow1_Loaded(object sender, RoutedEventArgs e)
@@ -38,7 +44,62 @@ namespace GUI
             LoadData();
         }
 
+        private void InitializeNotification()
+        {
+            _notifyIcon = new TaskbarIcon();
+            _notifyIcon.Icon = new System.Drawing.Icon("favicon.ico");
+            _notifyIcon.ToolTipText = "TodoList Application";
+            _notifyIcon.TrayLeftMouseUp += NotifyIcon_TrayLeftMouseUp;
+            _notifyIcon.ContextMenu = (ContextMenu)FindResource("NotifyIconContextMenu");
 
+            //------------- khai bao thông báo giờ gần đến
+            _timer = new DispatcherTimer();
+            _timer.Interval = TimeSpan.FromSeconds(5);
+            _timer.Tick += Timer_Tick;
+            _timer.Start();
+        }
+        private void QuitMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            _notifyIcon.Dispose();
+            Application.Current.Shutdown();
+        }
+        private void NotifyIcon_TrayLeftMouseUp(object sender, RoutedEventArgs e)
+        {
+            ShowWindow();
+        }
+
+        public void ShowWindow()
+        {
+            this.Show();
+            this.WindowState = WindowState.Normal;
+            this.Activate();
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            CheckUpcomingTasks();
+        }
+
+        private void CheckUpcomingTasks()
+        {
+            var tasks = _todoService.GetTasksByUserAndTime(User.UserId, _current);
+            DateTime now = DateTime.Now;
+
+            foreach (var task in tasks)
+            {
+                DateTime taskTime = task.Time;
+                var minutesUntilTask = (taskTime - now).TotalMinutes;
+
+                if (minutesUntilTask <= 5 && minutesUntilTask > 4.9)
+                {
+                    _notifyIcon.ShowBalloonTip("Upcoming Task", $"5 minutes left until {task.Title} starts", BalloonIcon.Info);
+                }
+                else if (minutesUntilTask <= 0 && minutesUntilTask >= -0.1)
+                {
+                    _notifyIcon.ShowBalloonTip("Task Starting", $"Task {task.Title} is starting now!", BalloonIcon.Info);
+                }
+
+            }
+        }
         private void LoadData()
         {
             Date = DateOnly.FromDateTime(DateTime.Now);
@@ -190,6 +251,20 @@ namespace GUI
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = true;
+            this.Hide();
+            if (_notifyIcon == null)
+            {
+                _notifyIcon = new TaskbarIcon();
+                _notifyIcon.Icon = new System.Drawing.Icon("favicon.ico");
+               
+
+            }
+            _notifyIcon.ShowBalloonTip("TodoList", "The application has been minimized to the system tray.", BalloonIcon.Info);
         }
     }
 }

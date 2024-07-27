@@ -62,17 +62,17 @@ namespace TodoList
 
         private void InitializeNotification()
         {
-            _notifyIcon = new TaskbarIcon();
-            _notifyIcon.Icon = new System.Drawing.Icon("favicon.ico");
-            _notifyIcon.ToolTipText = "TodoList Application";
-            _notifyIcon.TrayLeftMouseUp += NotifyIcon_TrayLeftMouseUp;
-            _notifyIcon.ContextMenu = (ContextMenu)FindResource("NotifyIconContextMenu");
+            //_notifyIcon = new TaskbarIcon();
+            //_notifyIcon.Icon = new System.Drawing.Icon("favicon.ico");
+            //_notifyIcon.ToolTipText = "TodoList Application";
+            //_notifyIcon.TrayLeftMouseUp += NotifyIcon_TrayLeftMouseUp;
+            //_notifyIcon.ContextMenu = (ContextMenu)FindResource("NotifyIconContextMenu");
 
-            //------------- khai bao thông báo giờ gần đến
-            _timer = new DispatcherTimer();
-            _timer.Interval = TimeSpan.FromSeconds(5);
-            _timer.Tick += Timer_Tick;
-            _timer.Start();
+            ////------------- khai bao thông báo giờ gần đến
+            //_timer = new DispatcherTimer();
+            //_timer.Interval = TimeSpan.FromSeconds(5);
+            //_timer.Tick += Timer_Tick;
+            //_timer.Start();
         }
 
         private void SubscribeToRedis()
@@ -137,16 +137,16 @@ namespace TodoList
         //}
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            todos.SaveFileToDo();
-            e.Cancel = true;
-            this.Hide();
-            if (_notifyIcon == null)
-            {
-                _notifyIcon = new TaskbarIcon();
-                _notifyIcon.Icon = new System.Drawing.Icon("favicon.ico");
-                _notifyIcon.ShowBalloonTip("TodoList", "The application has been minimized to the system tray.", BalloonIcon.Info);
+            //todos.SaveFileToDo();
+            //e.Cancel = true;
+            //this.Hide();
+            //if (_notifyIcon == null)
+            //{
+            //    _notifyIcon = new TaskbarIcon();
+            //    _notifyIcon.Icon = new System.Drawing.Icon("favicon.ico");
+            //    _notifyIcon.ShowBalloonTip("TodoList", "The application has been minimized to the system tray.", BalloonIcon.Info);
 
-            }
+            //}
            
 
         }

@@ -8,7 +8,7 @@
         Title="AdminWindow" Height="550" Width="850" Background="#BBDEFB" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="AdminMainWindow_Loaded">
     <Grid>
         <Label Content="Manager User" HorizontalAlignment="Left" Height="76" Margin="20,22,0,0" VerticalAlignment="Top" Width="363" FontWeight="Bold" FontSize="50" Foreground="#0D47A1"/>
-        <Label x:Name="HelloMsgLabel" Content="Admin" HorizontalAlignment="Right" Height="54" Margin="0,42,135,0" VerticalAlignment="Top" Width="196" FontSize="25" Foreground="#0D47A1" FontWeight="Bold"/>
+        <Label x:Name="HelloMsgLabel" Content="Admin" HorizontalAlignment="Right" Height="54" Margin="0,35,124,0" VerticalAlignment="Top" Width="250" FontSize="25" Foreground="#0D47A1" FontWeight="Bold"/>
         <Rectangle HorizontalAlignment="Center" Height="75" Margin="0,117,0,0" Stroke="Black" VerticalAlignment="Top" Width="810" Fill="#E3F2FD" StrokeThickness="1"/>
         <Label Content="Email" HorizontalAlignment="Left" Height="35" Margin="35,136,0,0" VerticalAlignment="Top" Width="70" FontSize="18" Foreground="#0D47A1"/>
         <TextBox x:Name="EmailTextBox" HorizontalAlignment="Right" Height="35" Margin="0,136,495,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Foreground="#0D47A1" FontSize="16" TabIndex="0"/>
